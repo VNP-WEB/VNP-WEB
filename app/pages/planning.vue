@@ -208,21 +208,25 @@ onMounted(() => {
 const submitBooking = async () => {
   isLoading.value = true
   try {
-    // 1. Sauvegarde dans Supabase
-    const { error } = await supabase.from('appointments').insert([{
+    // 1. Sauvegarde et récupération de l'ID avec .select()
+    const { data, error } = await supabase.from('appointments').insert([{
       date_string: selectedDayObj.value.dateStr,
       time_string: selectedTime.value,
       client_name: formData.value.name,
       client_email: formData.value.email,
       service_reason: formData.value.reason
-    }])
+    }]).select()
 
     if (error) throw error
 
-    // 2. Appel de l'API pour t'envoyer l'e-mail
+    // On isole l'ID créé par Supabase
+    const appointmentId = data[0].id
+
+    // 2. Appel de l'API pour envoyer les e-mails (avec l'ID)
     await $fetch('/api/notify-booking', {
       method: 'POST',
       body: {
+        id: appointmentId,
         name: formData.value.name,
         email: formData.value.email,
         date: selectedDayObj.value.dateStr,
