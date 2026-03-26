@@ -13,107 +13,127 @@
 
     <section class="py-12 bg-gray-50 min-h-screen">
       <div class="container mx-auto px-4 max-w-6xl">
-        
         <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
-          
           <div class="p-6 border-b flex items-center justify-between bg-white">
-            <h2 class="text-2xl font-bold text-gray-800 capitalize">
-              {{ formattedMonth }}
-            </h2>
-            
+            <h2 class="text-2xl font-bold text-gray-800 capitalize">{{ formattedMonth }}</h2>
             <div class="flex items-center gap-2">
-              <button @click="previousWeek" class="p-2 border border-gray-300 rounded hover:bg-gray-50 transition flex items-center justify-center w-10 h-10">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-600"><path d="m15 18-6-6 6-6"/></svg>
+              <button @click="previousWeek" class="p-2 border border-gray-300 rounded hover:bg-gray-50 transition w-10 h-10 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
               </button>
-              <button @click="resetToToday" class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 font-medium text-gray-700 transition h-10">
-                Aujourd'hui
-              </button>
-              <button @click="nextWeek" class="p-2 border border-gray-300 rounded hover:bg-gray-50 transition flex items-center justify-center w-10 h-10">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-600"><path d="m9 18 6-6-6-6"/></svg>
+              <button @click="resetToToday" class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 font-medium text-gray-700 h-10">Aujourd'hui</button>
+              <button @click="nextWeek" class="p-2 border border-gray-300 rounded hover:bg-gray-50 transition w-10 h-10 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
               </button>
             </div>
           </div>
 
           <div class="overflow-x-auto">
             <div class="min-w-[800px]">
-              
               <div class="grid grid-cols-6 border-b bg-gray-50">
                 <div class="p-4 border-r border-gray-200"></div> 
                 <div v-for="day in calendarDays" :key="day.dateStr" class="p-4 text-center border-r border-gray-200">
                   <div class="text-xs text-gray-600 font-medium uppercase mb-1">{{ day.name }}</div>
-                  <div :class="['text-2xl font-bold', day.isToday ? 'text-blue-600' : 'text-gray-900']">
-                    {{ day.dayNumber }}
-                  </div>
+                  <div :class="['text-2xl font-bold', day.isToday ? 'text-blue-600' : 'text-gray-900']">{{ day.dayNumber }}</div>
                 </div>
               </div>
 
               <div v-for="time in timeSlots" :key="time" class="grid grid-cols-6 border-b border-gray-100 hover:bg-gray-50/50 transition">
-                
-                <div class="p-4 border-r border-gray-200 bg-gray-50 font-medium text-sm text-gray-600 flex items-center justify-center">
-                  {{ time }}
-                </div>
-                
+                <div class="p-4 border-r border-gray-200 bg-gray-50 font-medium text-sm text-gray-600 flex items-center justify-center">{{ time }}</div>
                 <div v-for="day in calendarDays" :key="day.dateStr + time" class="p-2 border-r border-gray-200 min-h-[80px]">
-                  
                   <div v-if="checkIfBooked(day.dateStr, time)" class="h-full w-full rounded-lg bg-gray-100 border border-gray-200 flex flex-col items-center justify-center cursor-not-allowed opacity-70">
                     <span class="text-xs font-semibold text-gray-500 mb-1">Indisponible</span>
                     <div class="w-8 h-1 bg-gray-300 rounded-full"></div>
                   </div>
-
                   <button v-else @click="openModal(day, time)" class="h-full w-full rounded-lg bg-white border-2 border-dashed border-blue-200 hover:border-blue-500 hover:bg-blue-50 transition-all flex items-center justify-center group cursor-pointer relative overflow-hidden">
-                    <span class="text-sm font-semibold text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0 duration-200">
-                      Réserver
-                    </span>
+                    <span class="text-sm font-semibold text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">Réserver</span>
                   </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div v-if="showModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 px-4 transition-all duration-300">
+        <div class="bg-white rounded-3xl shadow-2xl w-full max-w-lg border border-blue-100 overflow-hidden transform transition-all p-0">
+          
+          <div class="bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 h-24 flex items-center justify-center relative">
+            <div class="bg-white/90 p-3 rounded-full shadow-lg border-2 border-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <button @click="showModal = false" class="absolute top-4 right-4 text-white hover:text-cyan-100 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+          </div>
+
+          <div class="p-8 md:p-10 text-center">
+            
+            <div v-if="isSuccess" class="py-6 animate-in zoom-in duration-300">
+               <div class="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+               </div>
+               <h3 class="text-3xl font-extrabold text-gray-900 mb-2">C'est réservé !</h3>
+               <p class="text-gray-600 text-lg">Un mail de confirmation vient d'être envoyé à :<br><span class="font-bold text-blue-600">{{ formData.email }}</span></p>
+               <div class="mt-8 text-sm text-gray-400">Cette fenêtre se fermera automatiquement...</div>
+            </div>
+
+            <div v-else>
+              <h3 class="text-3xl font-bold text-gray-950 mb-6">Confirmation</h3>
+              
+              <div class="bg-blue-50 border border-blue-100 text-blue-900 p-6 rounded-2xl mb-8 text-left">
+                <div class="flex items-center gap-4 mb-2">
+                   <div class="p-2 bg-white rounded-lg border border-blue-100 text-blue-600">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                   </div>
+                   <p class="text-xl font-extrabold text-blue-950 capitalize">Le {{ selectedDateDisplay }} à {{ selectedTime }}</p>
                 </div>
               </div>
 
+              <form @submit.prevent="submitBooking" class="space-y-6 text-left">
+                <div class="group">
+                  <label class="block text-sm font-bold text-gray-700 mb-2">Nom complet</label>
+                  <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400 group-focus-within:text-blue-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                    </div>
+                    <input v-model="formData.name" type="text" required placeholder="Jean Dupont" class="w-full pl-12 p-4 border border-gray-200 bg-gray-50 rounded-2xl outline-none focus:border-blue-300 focus:ring-4 focus:ring-blue-100 transition">
+                  </div>
+                </div>
+
+                <div class="group">
+                  <label class="block text-sm font-bold text-gray-700 mb-2">Adresse Email</label>
+                  <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400 group-focus-within:text-blue-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"/></svg>
+                    </div>
+                    <input v-model="formData.email" type="email" required placeholder="jean@mail.com" class="w-full pl-12 p-4 border border-gray-200 bg-gray-50 rounded-2xl outline-none focus:border-blue-300 focus:ring-4 focus:ring-blue-100 transition">
+                  </div>
+                </div>
+
+                <div class="group">
+                  <label class="block text-sm font-bold text-gray-700 mb-2">Motif du RDV</label>
+                  <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400 group-focus-within:text-blue-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                    </div>
+                    <input v-model="formData.reason" type="text" required placeholder="Ex: Devis site web" class="w-full pl-12 p-4 border border-gray-200 bg-gray-50 rounded-2xl outline-none focus:border-blue-300 focus:ring-4 focus:ring-blue-100 transition">
+                  </div>
+                </div>
+
+                <div class="flex gap-4 mt-10 pt-6 border-t border-gray-100">
+                  <button type="button" @click="showModal = false" class="px-6 py-4 border-2 border-gray-100 rounded-2xl text-gray-500 font-bold hover:bg-gray-50 transition">Annuler</button>
+                  <button type="submit" :disabled="isLoading" class="flex-1 py-4 px-8 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-2xl font-bold hover:shadow-lg hover:scale-[1.02] disabled:opacity-50 transition-all flex items-center justify-center gap-3">
+                    <span v-if="isLoading" class="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
+                    <svg v-else xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    {{ isLoading ? 'Action...' : 'CONFIRMER' }}
+                  </button>
+                </div>
+              </form>
             </div>
+
           </div>
         </div>
-
       </div>
-
-      <div v-if="showModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 px-4">
-        <div class="bg-white rounded-xl shadow-2xl p-8 w-full max-w-md border border-gray-100 transform transition-all">
-          <div class="flex items-center justify-between mb-6">
-            <h3 class="text-2xl font-bold text-gray-900">Nouveau Rendez-vous</h3>
-            <button @click="showModal = false" class="text-gray-400 hover:text-gray-600">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-            </button>
-          </div>
-          
-          <div class="bg-blue-50 text-blue-800 p-4 rounded-lg mb-6 flex items-center gap-3">
-             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
-            <span class="font-medium">Le {{ selectedDateDisplay }} à {{ selectedTime }}</span>
-          </div>
-
-          <form @submit.prevent="submitBooking" class="space-y-5">
-            <div>
-              <label class="block text-sm font-semibold text-gray-700 mb-1">Votre Nom complet *</label>
-              <input v-model="formData.name" type="text" required placeholder="Jean Dupont" class="w-full p-3 border border-gray-300 rounded-lg outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition">
-            </div>
-            <div>
-              <label class="block text-sm font-semibold text-gray-700 mb-1">Votre Email *</label>
-              <input v-model="formData.email" type="email" required placeholder="jean@exemple.com" class="w-full p-3 border border-gray-300 rounded-lg outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition">
-            </div>
-            <div>
-              <label class="block text-sm font-semibold text-gray-700 mb-1">Motif du rendez-vous *</label>
-              <input v-model="formData.reason" type="text" required placeholder="Ex: Devis création site vitrine" class="w-full p-3 border border-gray-300 rounded-lg outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition">
-            </div>
-
-            <div class="flex gap-3 mt-8 pt-4 border-t border-gray-100">
-              <button type="button" @click="showModal = false" class="flex-1 py-3 px-4 border border-gray-300 rounded-lg text-gray-700 font-medium hover:bg-gray-50 transition">Annuler</button>
-              <button type="submit" :disabled="isLoading" class="flex-1 py-3 px-4 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition flex items-center justify-center gap-2">
-                <span v-if="isLoading" class="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
-                {{ isLoading ? 'Enregistrement...' : 'Confirmer' }}
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-
     </section>
   </div>
 </template>
@@ -121,22 +141,19 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 
-// --- CONNEXION BASE DE DONNÉES ---
 const supabase = useSupabaseClient()
 
-// --- VARIABLES D'ÉTAT ---
 const currentDate = ref(new Date())
 const bookedSlots = ref([])
 const showModal = ref(false)
+const isSuccess = ref(false) // <--- ÉTAT DE SUCCÈS
 const selectedDayObj = ref(null)
 const selectedTime = ref('')
 const isLoading = ref(false)
 const formData = ref({ name: '', email: '', reason: '' })
 
-// Horaires de 9h à 17h
 const timeSlots = Array.from({ length: 9 }, (_, i) => `${(9 + i).toString().padStart(2, '0')}:00`)
 
-// --- LOGIQUE DU CALENDRIER ---
 const formattedMonth = computed(() => {
   return currentDate.value.toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' })
 })
@@ -145,7 +162,6 @@ const calendarDays = computed(() => {
   const week = []
   const todayStr = new Date().toDateString()
   const currentDay = new Date(currentDate.value)
-  
   const dayOfWeek = currentDay.getDay()
   const distanceToMonday = dayOfWeek === 0 ? -6 : 1 - dayOfWeek
   currentDay.setDate(currentDay.getDate() + distanceToMonday)
@@ -164,19 +180,11 @@ const calendarDays = computed(() => {
   return week
 })
 
-const previousWeek = () => {
-  currentDate.value = new Date(currentDate.value.setDate(currentDate.value.getDate() - 7))
-}
-const nextWeek = () => {
-  currentDate.value = new Date(currentDate.value.setDate(currentDate.value.getDate() + 7))
-}
-const resetToToday = () => {
-  currentDate.value = new Date()
-}
+const previousWeek = () => { currentDate.value = new Date(currentDate.value.setDate(currentDate.value.getDate() - 7)) }
+const nextWeek = () => { currentDate.value = new Date(currentDate.value.setDate(currentDate.value.getDate() + 7)) }
+const resetToToday = () => { currentDate.value = new Date() }
 
-const checkIfBooked = (dateStr, time) => {
-  return bookedSlots.value.includes(`${dateStr}_${time}`)
-}
+const checkIfBooked = (dateStr, time) => { return bookedSlots.value.includes(`${dateStr}_${time}`) }
 
 const selectedDateDisplay = computed(() => {
   return selectedDayObj.value ? selectedDayObj.value.dateObj.toLocaleDateString('fr-FR') : ''
@@ -186,29 +194,24 @@ const openModal = (dayObj, time) => {
   selectedDayObj.value = dayObj
   selectedTime.value = time
   formData.value = { name: '', email: '', reason: '' }
+  isSuccess.value = false // On reset le succès
   showModal.value = true
 }
 
-// --- ACTIONS BASE DE DONNÉES ET EMAIL ---
 const fetchAppointments = async () => {
   try {
     const { data, error } = await supabase.from('appointments').select('date_string, time_string')
     if (!error && data) {
       bookedSlots.value = data.map(app => `${app.date_string}_${app.time_string}`)
     }
-  } catch (err) {
-    console.error(err)
-  }
+  } catch (err) { console.error(err) }
 }
 
-onMounted(() => {
-  fetchAppointments()
-})
+onMounted(() => { fetchAppointments() })
 
 const submitBooking = async () => {
   isLoading.value = true
   try {
-    // 1. Sauvegarde et récupération de l'ID avec .select()
     const { data, error } = await supabase.from('appointments').insert([{
       date_string: selectedDayObj.value.dateStr,
       time_string: selectedTime.value,
@@ -219,14 +222,10 @@ const submitBooking = async () => {
 
     if (error) throw error
 
-    // On isole l'ID créé par Supabase
-    const appointmentId = data[0].id
-
-    // 2. Appel de l'API pour envoyer les e-mails (avec l'ID)
     await $fetch('/api/notify-booking', {
       method: 'POST',
       body: {
-        id: appointmentId,
+        id: data[0].id,
         name: formData.value.name,
         email: formData.value.email,
         date: selectedDayObj.value.dateStr,
@@ -235,13 +234,18 @@ const submitBooking = async () => {
       }
     })
 
-    // 3. Fermeture et mise à jour
-    showModal.value = false
+    isSuccess.value = true // ON AFFICHE LE SUCCÈS ICI
     await fetchAppointments()
-    alert("Votre rendez-vous a bien été enregistré !")
+    
+    // Fermeture automatique après 4 secondes
+    setTimeout(() => {
+      showModal.value = false
+      isSuccess.value = false
+    }, 4000)
+
   } catch (error) {
-    alert("Un problème est survenu lors de la réservation.")
     console.error(error)
+    alert("Erreur technique lors de la réservation.")
   } finally {
     isLoading.value = false
   }
@@ -249,11 +253,15 @@ const submitBooking = async () => {
 </script>
 
 <style scoped>
-.overflow-x-auto {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.overflow-x-auto { -ms-overflow-style: none; scrollbar-width: none; }
+.overflow-x-auto::-webkit-scrollbar { display: none; }
+
+.animate-in {
+  animation: fadeIn 0.4s ease-out;
 }
-.overflow-x-auto::-webkit-scrollbar {
-  display: none;
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 </style>
