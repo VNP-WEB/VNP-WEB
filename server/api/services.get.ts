@@ -1,4 +1,4 @@
-import db from '../utils/sqlite';
+
 
 export default defineEventHandler((event) => {
   // On prépare la requête SQL pour récupérer tous les services
