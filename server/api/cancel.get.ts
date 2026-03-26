@@ -1,19 +1,19 @@
-import { serverSupabaseClient } from '#supabase/server'
+import { serverSupabaseServiceRole } from '#supabase/server'
 
 export default defineEventHandler(async (event) => {
-  // On récupère l'ID depuis l'URL cliquée par le client
   const { id } = getQuery(event)
   
   if (!id) return 'Erreur : Identifiant manquant.'
 
   try {
-    // Connexion à Supabase pour supprimer la ligne correspondante
-    const supabase = await serverSupabaseClient(event)
+    // MAGIE : On utilise le "Service Role" (les pleins pouvoirs Administrateur)
+    const supabase = await serverSupabaseServiceRole(event)
+    
+    // La suppression ne sera plus bloquée par la sécurité !
     const { error } = await supabase.from('appointments').delete().eq('id', id)
 
     if (error) throw error
 
-    // Ce que le client verra sur son écran après avoir cliqué sur annuler
     return `
       <html>
         <head>
@@ -31,6 +31,7 @@ export default defineEventHandler(async (event) => {
       </html>
     `
   } catch (error) {
+    console.error(error)
     return 'Une erreur est survenue lors de l\'annulation.'
   }
 })
