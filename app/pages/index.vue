@@ -188,6 +188,7 @@
 }
 .text-center { text-align: center; }
 
+/* -- HERO SECTION -- */
 .hero-section {
   background: 
     linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
@@ -238,7 +239,7 @@
   border-radius: 8px;
   opacity: 0.9;
 }
-.hero-image-wrapper { flex: 1; }
+.hero-image-wrapper { flex: 1; width: 100%; }
 .image-placeholder {
   width: 100%;
   height: 350px;
@@ -249,16 +250,14 @@
   justify-content: center;
   backdrop-filter: blur(10px);
 }
-
-/* --- NOUVEAU CSS POUR L'IMAGE --- */
 .image-placeholder img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
 }
-/* --------------------------------- */
 
+/* -- STATS SECTION -- */
 .stats-section {
   padding: 60px 20px;
   max-width: 1200px;
@@ -271,6 +270,10 @@
   flex-wrap: wrap;
   gap: 20px;
 }
+.stat-item {
+  flex: 1;
+  min-width: 150px;
+}
 .stat-number {
   font-size: 3rem;
   color: #0047ff;
@@ -282,18 +285,29 @@
   margin: 0;
 }
 
-.services-section {
+/* -- SERVICES, FEATURES, WHY US, TESTIMONIALS -- */
+.services-section, .testimonials-section {
   padding: 80px 20px;
   background-color: #fafafa;
 }
-.services-grid {
+.features-section, .why-us-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.services-grid, .features-grid, .why-us-grid, .testimonials-grid {
   max-width: 1200px;
   margin: 0 auto 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Changement ici : minmax de 300px à 280px pour mieux s'adapter aux petits écrans */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
   gap: 30px;
 }
-.service-card {
+.features-grid, .why-us-grid {
+  text-align: center;
+}
+
+.service-card, .testimonial-card {
   background: white;
   padding: 30px;
   border-radius: 15px;
@@ -327,17 +341,6 @@
   color: #0047ff;
 }
 
-.features-section, .why-us-section {
-  padding: 80px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.features-grid, .why-us-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-  text-align: center;
-}
 .blue-circle {
   background-color: #0047ff;
   color: white;
@@ -362,23 +365,6 @@
   border-radius: 20px;
 }
 
-.testimonials-section {
-  padding: 80px 20px;
-  background-color: #fafafa;
-}
-.testimonials-grid {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-.testimonial-card {
-  background: white;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
 .client-info {
   display: flex;
   align-items: center;
@@ -407,4 +393,67 @@
 }
 .cta-content h2 { font-size: 2.5rem; margin-bottom: 15px; }
 .cta-content p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
+
+/* =========================================================
+   MEDIA QUERIES (RESPONSIVE POUR TABLETTES ET MOBILES)
+   ========================================================= */
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .hero-text h1 {
+    font-size: 2.8rem;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+  .image-placeholder {
+    height: 300px;
+  }
+  .stats-container {
+    gap: 30px;
+  }
+  .stat-item {
+    width: 40%; /* Force les stats en grille 2x2 sur tablette */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 20px;
+  }
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-primary, .btn-secondary {
+    width: 100%; /* Les boutons prennent toute la largeur sur mobile */
+  }
+  .btn-secondary {
+    display: none; /* On masque le bouton vide secondaire sur mobile pour gagner de la place */
+  }
+  .image-placeholder {
+    height: 220px;
+  }
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  .stat-item {
+    width: 100%; /* Les stats s'empilent complètement sur petit mobile */
+  }
+  .services-grid, .features-grid, .why-us-grid, .testimonials-grid {
+    grid-template-columns: 1fr; /* Force 1 seule colonne sur mobile */
+  }
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+}
 </style>
