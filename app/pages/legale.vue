@@ -19,8 +19,11 @@
           <div class="section-content">
             <p><strong>{{ $t('legal.publisher.company') }} :</strong> VNP-WEB</p>
             <p><strong>{{ $t('legal.publisher.form') }} :</strong> {{ $t('legal.publisher.formValue') }}</p>
+            <p><strong>{{ $t('legal.publisher.siret') }} :</strong> {{ $t('legal.publisher.siretValue') }}</p>
+            <p><strong>{{ $t('legal.publisher.vat') }} :</strong> {{ $t('legal.publisher.vatValue') }}</p>
             <p><strong>{{ $t('legal.publisher.director') }} :</strong> Guillaume PRUVOST</p>
             
+            <p class="mt-4"><span class="icon">📍</span> <strong>{{ $t('legal.publisher.address') }} :</strong> {{ $t('legal.publisher.addressValue') }}</p>
             <p><span class="icon">📧</span> <strong>{{ $t('legal.publisher.email') }} :</strong> <a href="mailto:sio.pruvost@gmail.com">sio.pruvost@gmail.com</a></p>
             <p><span class="icon">📞</span> <strong>{{ $t('legal.publisher.phone') }} :</strong> +33 6 45 87 70 74</p>
           </div>
@@ -34,6 +37,7 @@
           <div class="section-content">
             <p><strong>{{ $t('legal.hosting.provider') }} :</strong> Vercel Inc.</p>
             <p><strong>{{ $t('legal.hosting.address') }} :</strong> 340 S Lemon Ave #4133, Walnut, CA 91789, USA</p>
+            <p><strong>{{ $t('legal.hosting.website') }} :</strong> <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">https://vercel.com</a></p>
           </div>
         </section>
 
@@ -133,7 +137,7 @@
         </section>
 
         <div class="updated-date">
-          <p>{{ $t('legal.updated') }} : {{ currentDate }}</p>
+          <p>{{ $t('legal.updated') }} : {{ currentDateDisplay }}</p>
         </div>
 
       </div>
@@ -143,10 +147,16 @@
 
 <script setup>
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
-// Date actuelle formatée
-const currentDate = computed(() => {
-  return new Date().toLocaleDateString('fr-FR')
+const { locale } = useI18n()
+
+// Date de mise à jour (Formatée selon la langue de l'utilisateur)
+const currentDateDisplay = computed(() => {
+  const currentLocaleStr = locale.value === 'en' ? 'en-US' : (locale.value === 'nl' ? 'nl-NL' : 'fr-FR')
+  // Change cette date si tu mets à jour tes mentions légales un jour
+  const lastUpdate = new Date('2024-03-26')
+  return lastUpdate.toLocaleDateString(currentLocaleStr, { year: 'numeric', month: 'long', day: 'numeric' })
 })
 
 // Meta tags SEO
@@ -242,6 +252,10 @@ useHead({
 
 .section-content strong {
   color: #1e293b;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .contact-row {

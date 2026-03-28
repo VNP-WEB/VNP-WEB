@@ -123,7 +123,8 @@
     "cancel": "Annuler",
     "confirm": "CONFIRMER",
     "loading": "Enregistrement...",
-    "error_msg": "Erreur technique lors de la réservation. Veuillez réessayer."
+    "error_msg": "Erreur technique lors de la réservation. Veuillez réessayer.",
+    "swipe_hint": "👈 Glissez pour voir plus 👉"
   },
   "contact": {
     "title": "Contactez-nous",
@@ -208,15 +209,21 @@
       "company": "Raison sociale",
       "form": "Forme juridique",
       "formValue": "Entreprise individuelle",
+      "siret": "Numéro SIRET",
+      "siretValue": "805 132 271 00018",
+      "vat": "Numéro de TVA",
+      "vatValue": "Non applicable, art. 293 B du CGI",
       "director": "Directeur de publication",
-      "address": "Adresse",
+      "address": "Siège social",
+      "addressValue": "57 Bis Avenue du Razès 11150 BRAM",
       "email": "Email",
       "phone": "Téléphone"
     },
     "hosting": {
       "title": "2. Hébergement",
       "provider": "Hébergeur",
-      "address": "Adresse"
+      "address": "Adresse",
+      "website": "Site web"
     },
     "intellectual": {
       "title": "3. Propriété intellectuelle",

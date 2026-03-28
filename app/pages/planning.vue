@@ -15,7 +15,7 @@
       <div class="container mx-auto px-4 max-w-6xl">
         
         <div class="md:hidden text-center text-sm text-gray-500 mb-3 animate-pulse">
-          <span>👈 Glissez pour voir plus 👉</span>
+          <span>{{ $t('planning.swipe_hint') }}</span>
         </div>
 
         <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
