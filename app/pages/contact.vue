@@ -19,16 +19,20 @@
             <span>✅</span> {{ $t('contact.form.success') }}
           </div>
 
+          <div v-if="errorMessage" class="success-message" style="background-color: #fef2f2; border-color: #fecaca; color: #991b1b;">
+            <span>❌</span> {{ errorMessage }}
+          </div>
+
           <form @submit.prevent="handleSubmit" class="contact-form">
             
             <div class="form-row">
               <div class="form-group">
                 <label for="name">{{ $t('contact.form.name') }} *</label>
-                <input id="name" v-model="formData.name" type="text" required placeholder="Jean Dupont" />
+                <input id="name" v-model="formData.name" type="text" required :placeholder="$t('contact.form.name')" />
               </div>
               <div class="form-group">
                 <label for="email">{{ $t('contact.form.email') }} *</label>
-                <input id="email" v-model="formData.email" type="email" required placeholder="jean.dupont@exemple.fr" />
+                <input id="email" v-model="formData.email" type="email" required placeholder="contact@mail.com" />
               </div>
             </div>
 
@@ -88,29 +92,29 @@
             <h4>{{ $t('contact.info.follow') }}</h4>
             <div class="social-links">
   
-  <a href="https://www.facebook.com/gp.vnp.web.redaction.seo.traduction.wordpress.crea?locale=fr_FR" target="_blank" rel="noopener noreferrer" class="social-btn facebook" aria-label="Facebook">
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-      <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7.5v4H10v9h4v-9z"/>
-    </svg>
-  </a>
+              <a href="https://www.facebook.com/gp.vnp.web.redaction.seo.traduction.wordpress.crea?locale=fr_FR" target="_blank" rel="noopener noreferrer" class="social-btn facebook" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7.5v4H10v9h4v-9z"/>
+                </svg>
+              </a>
 
-  <a href="https://x.com/PruvostSEO" target="_blank" rel="noopener noreferrer" class="social-btn twitter" aria-label="X (Twitter)">
-    <span style="font-size: 1.2rem;">𝕏</span>
-  </a>
+              <a href="https://x.com/PruvostSEO" target="_blank" rel="noopener noreferrer" class="social-btn twitter" aria-label="X (Twitter)">
+                <span style="font-size: 1.2rem;">𝕏</span>
+              </a>
 
-  <a href="https://www.linkedin.com/in/vnp-web-redaction-seo-wordpress-traduction/" target="_blank" rel="noopener noreferrer" class="social-btn linkedin" aria-label="LinkedIn">
-    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-    </svg>
-  </a>
+              <a href="https://www.linkedin.com/in/vnp-web-redaction-seo-wordpress-traduction/" target="_blank" rel="noopener noreferrer" class="social-btn linkedin" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
 
-  <a href="https://www.instagram.com/vnpweb/?hl=fr" target="_blank" rel="noopener noreferrer" class="social-btn instagram" aria-label="Instagram">
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-    </svg>
-  </a>
+              <a href="https://www.instagram.com/vnpweb/?hl=fr" target="_blank" rel="noopener noreferrer" class="social-btn instagram" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
 
-</div>
+            </div>
           </div>
         </div>
         
@@ -123,10 +127,11 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n' 
 
 const route = useRoute()
+const { t } = useI18n() // On ramène l'outil de traduction ici aussi !
 
-// État du formulaire
 const formData = ref({
   name: '',
   email: '',
@@ -137,18 +142,19 @@ const formData = ref({
 
 const isSubmitted = ref(false)
 const isLoading = ref(false)
+const errorMessage = ref('') 
 
-// Pré-remplissage automatique si l'utilisateur vient de la page Services
 onMounted(() => {
   if (route.query.service) {
-    const serviceName = route.query.service.replace(/-/g, ' ').toUpperCase()
-    formData.value.subject = `Demande de devis : ${serviceName}`
+    const serviceId = route.query.service.toString()
+    // Utilisation des traductions pour le pré-remplissage du formulaire de contact !
+    formData.value.subject = `${t('contact.subjectPrefix')} ${t('serviceNames.' + serviceId)}`
   }
 })
 
-// Gestion de l'envoi avec Web3Forms
 const handleSubmit = async () => {
   isLoading.value = true
+  errorMessage.value = '' 
 
   try {
     const response = await fetch('https://api.web3forms.com/submit', {
@@ -158,15 +164,10 @@ const handleSubmit = async () => {
         Accept: 'application/json',
       },
       body: JSON.stringify({
-        // La fameuse clé Web3Forms :
         access_key: '0253ffb1-d51b-4fa7-8fc6-0579921f89fe',
-        
-        // Configuration de l'email
         subject: `Nouveau contact VNP-WEB : ${formData.value.subject}`,
         from_name: 'Formulaire VNP-WEB',
-        replyto: formData.value.email, // Permet de faire "Répondre" directement au client
-        
-        // Données du formulaire
+        replyto: formData.value.email,
         Nom: formData.value.name,
         Email: formData.value.email,
         Téléphone: formData.value.phone || 'Non renseigné',
@@ -180,7 +181,6 @@ const handleSubmit = async () => {
     if (result.success) {
       isSubmitted.value = true
       
-      // Réinitialise le formulaire
       formData.value = {
         name: '',
         email: '',
@@ -189,7 +189,6 @@ const handleSubmit = async () => {
         message: ''
       }
 
-      // Cache le message de succès après 5 secondes
       setTimeout(() => {
         isSubmitted.value = false
       }, 5000)
@@ -198,8 +197,8 @@ const handleSubmit = async () => {
     }
 
   } catch (error) {
-    alert("Désolé, une erreur s'est produite lors de l'envoi du message.")
     console.error(error)
+    errorMessage.value = "Désolé, une erreur s'est produite lors de l'envoi du message."
   } finally {
     isLoading.value = false
   }
@@ -221,7 +220,6 @@ useHead({
   min-height: 100vh;
 }
 
-/* Hero Section */
 .contact-hero {
   background: linear-gradient(135deg, #0047ff 0%, #00b4ff 100%);
   color: white;
@@ -231,7 +229,6 @@ useHead({
 .hero-container h1 { font-size: 3rem; margin-bottom: 15px; }
 .hero-container p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
 
-/* Grid principale */
 .contact-section {
   padding: 60px 20px;
   max-width: 1200px;
@@ -256,7 +253,6 @@ useHead({
   }
 }
 
-/* Côté Formulaire */
 .contact-form-side {
   padding: 50px;
 }
@@ -328,7 +324,6 @@ useHead({
 .btn-primary:hover { background: #0030cc; }
 .btn-primary:disabled { background: #94a3b8; cursor: not-allowed; }
 
-/* Côté Informations */
 .contact-info-side {
   background: #f8fafc;
   padding: 50px;

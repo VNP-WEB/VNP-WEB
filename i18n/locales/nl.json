@@ -74,19 +74,56 @@
       "btn": "Vraag een gratis offerte aan →"
     }
   },
+  "serviceNames": {
+    "redaction-web": "Web Copywriting",
+    "seo": "SEO",
+    "wordpress": "WordPress",
+    "integration": "Web Integratie",
+    "creation-sites": "Website Creatie",
+    "smo": "SMO (Sociale Media)"
+  },
   "services": {
     "title": "Onze Diensten",
     "subtitle": "Volledige en professionele weboplossingen om aan al uw digitale behoeften te voldoen",
     "mainOffers": "Onze belangrijkste aanbiedingen",
     "mainOffersSubtitle": "Kies de oplossing die het beste bij uw behoeften past",
     "popular": "Populair",
-    "bookConsultation": "Boek een consultatie",
+    "bookConsultation": "Kies deze service",
     "additionalServices": "Aanvullende diensten",
     "additionalServicesSubtitle": "Aanvullende diensten om uw online aanwezigheid te optimaliseren",
     "workProcess": "Ons werkproces",
     "workProcessSubtitle": "Een bewezen methodologie om het succes van uw project te garanderen",
     "question": "Een vraag over onze diensten?",
-    "questionSubtitle": "Ons team staat tot uw beschikking om uw project te bespreken"
+    "questionSubtitle": "Ons team staat tot uw beschikking om uw project te bespreken",
+    "modal": {
+      "title": "Hoe verder te gaan?",
+      "subtitle_part1": "Voor de",
+      "subtitle_part2": " dienst, kies de optie die bij u past.",
+      "option1_title": "Online boeken",
+      "option1_desc": "Kies een videotijdslot",
+      "option2_title": "Stuur een bericht",
+      "option2_desc": "Antwoord binnen 24 uur"
+    }
+  },
+  "planning": {
+    "reasonPrefix": "Consultatie voor:",
+    "hero_title": "Consultatieplanning",
+    "hero_subtitle": "Selecteer een beschikbaar tijdslot voor uw afspraak",
+    "today": "Vandaag",
+    "unavailable": "Niet beschikbaar",
+    "reserve": "Boeken",
+    "success_title": "Het is geboekt!",
+    "success_desc": "Een bevestigingsmail is zojuist verzonden naar:",
+    "success_footer": "Dit venster sluit automatisch...",
+    "confirm_title": "Bevestiging",
+    "selected_date": "Op {date} om {time}",
+    "form_name": "Volledige naam",
+    "form_email": "E-mailadres",
+    "form_reason": "Reden voor afspraak",
+    "cancel": "Annuleren",
+    "confirm": "BEVESTIGEN",
+    "loading": "Verwerken...",
+    "error_msg": "Technische fout tijdens het boeken. Probeer het opnieuw."
   },
   "contact": {
     "title": "Neem contact op",
@@ -94,12 +131,13 @@
     "formTitle": "Stuur ons een bericht",
     "formSubtitle": "Vul onderstaand formulier in en wij nemen zo snel mogelijk contact met u op.",
     "location": "Onze locatie",
+    "subjectPrefix": "Offerte aanvraag:",
     "form": {
       "name": "Volledige naam",
       "email": "E-mail",
       "phone": "Telefoon",
       "subject": "Onderwerp",
-      "subjectPlaceholder": "Offerte aanvraag",
+      "subjectPlaceholder": "Ex: Offerte aanvraag",
       "message": "Bericht",
       "messagePlaceholder": "Beschrijf uw project in detail...",
       "send": "Verzenden",

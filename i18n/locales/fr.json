@@ -74,19 +74,56 @@
       "btn": "Demander un devis gratuit →"
     }
   },
+  "serviceNames": {
+    "redaction-web": "Rédaction web",
+    "seo": "SEO",
+    "wordpress": "WordPress",
+    "integration": "Intégration",
+    "creation-sites": "Création de sites",
+    "smo": "SMO (Réseaux Sociaux)"
+  },
   "services": {
     "title": "Nos Services",
     "subtitle": "Des solutions web complètes et professionnelles pour répondre à tous vos besoins digitaux",
     "mainOffers": "Nos offres principales",
     "mainOffersSubtitle": "Choisissez la solution qui correspond le mieux à vos besoins",
     "popular": "Populaire",
-    "bookConsultation": "Réserver une consultation",
+    "bookConsultation": "Choisir ce service",
     "additionalServices": "Services complémentaires",
     "additionalServicesSubtitle": "Des prestations additionnelles pour optimiser votre présence en ligne",
     "workProcess": "Notre processus de travail",
     "workProcessSubtitle": "Une méthodologie éprouvée pour garantir le succès de votre projet",
     "question": "Une question sur nos services ?",
-    "questionSubtitle": "Notre équipe est à votre disposition pour discuter de votre projet"
+    "questionSubtitle": "Notre équipe est à votre disposition pour discuter de votre projet",
+    "modal": {
+      "title": "Comment procéder ?",
+      "subtitle_part1": "Pour le service",
+      "subtitle_part2": ", choisissez l'option qui vous convient.",
+      "option1_title": "Prendre RDV en ligne",
+      "option1_desc": "Choisir un créneau visio",
+      "option2_title": "Envoyer un message",
+      "option2_desc": "Réponse sous 24h"
+    }
+  },
+  "planning": {
+    "reasonPrefix": "Consultation pour :",
+    "hero_title": "Planning des Consultations",
+    "hero_subtitle": "Sélectionnez un créneau disponible pour votre rendez-vous",
+    "today": "Aujourd'hui",
+    "unavailable": "Indisponible",
+    "reserve": "Réserver",
+    "success_title": "C'est réservé !",
+    "success_desc": "Un mail de confirmation vient d'être envoyé à :",
+    "success_footer": "Cette fenêtre se fermera automatiquement...",
+    "confirm_title": "Confirmation",
+    "selected_date": "Le {date} à {time}",
+    "form_name": "Nom complet",
+    "form_email": "Adresse Email",
+    "form_reason": "Motif du RDV",
+    "cancel": "Annuler",
+    "confirm": "CONFIRMER",
+    "loading": "Enregistrement...",
+    "error_msg": "Erreur technique lors de la réservation. Veuillez réessayer."
   },
   "contact": {
     "title": "Contactez-nous",
@@ -94,12 +131,13 @@
     "formTitle": "Envoyez-nous un message",
     "formSubtitle": "Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.",
     "location": "Notre localisation",
+    "subjectPrefix": "Demande de devis :",
     "form": {
       "name": "Nom complet",
       "email": "Email",
       "phone": "Téléphone",
       "subject": "Sujet",
-      "subjectPlaceholder": "Demande de devis",
+      "subjectPlaceholder": "Ex: Demande de devis",
       "message": "Message",
       "messagePlaceholder": "Décrivez votre projet en détail...",
       "send": "Envoyer le message",
