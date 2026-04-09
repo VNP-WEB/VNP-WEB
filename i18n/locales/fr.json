@@ -20,6 +20,7 @@
     "stats": {
       "projects": "Projets réalisés",
       "satisfaction": "Clients satisfaits",
+      "years": "ans",
       "experience": "Années d'expérience",
       "support": "Support disponible"
     },
@@ -272,7 +273,7 @@
       "content3": "En conséquence, VNP-WEB décline toute responsabilité pour toute imprécision, inexactitude ou omission portant sur des informations disponibles sur ce site."
     },
     "links": {
-      "title": "7. Liens hypertextes",
+      "title": "7. Hypertext Links",
       "content1": "Le site VNP-WEB peut contenir des liens vers d'autres sites internet. VNP-WEB ne dispose d'aucun moyen pour contrôler ces sites et n'assume aucune responsabilité quant à leur contenu.",
       "content2": "La création de liens hypertextes vers le site VNP-WEB nécessite une autorisation préalable écrite."
     },
