@@ -90,9 +90,9 @@
           <span class="feature-link" style="cursor: default;">{{ $t('home.features.learn_more') }}</span>
         </div>
         <div class="feature-item">
-          <div class="feature-icon blue-circle">🛡️</div>
-          <h3>{{ $t('home.features.payment') }}</h3>
-          <p>{{ $t('home.features.payment_desc') }}</p>
+          <div class="feature-icon blue-circle">🎯</div>
+          <h3>{{ $t('home.features.strategy') }}</h3>
+          <p>{{ $t('home.features.strategy_desc') }}</p>
           <NuxtLink :to="localePath('/services')" class="feature-link">{{ $t('home.features.learn_more') }}</NuxtLink>
         </div>
       </div>
