@@ -15,7 +15,8 @@
       "title_start": "Let's build your ",
       "title_highlight": "perfect website",
       "subtitle": "High-performance, modern, and optimized web solutions to grow your business.",
-      "btn": "Get a quote →"
+      "btn": "Get a quote →",
+      "btn_portfolio": "View our portfolio"
     },
     "stats": {
       "projects": "Projects completed",
@@ -29,8 +30,8 @@
       "subtitle": "Comprehensive web solutions for all your digital needs",
       "web_writing": "Web Copywriting",
       "web_writing_desc": "Optimized content for the web and natural referencing.",
-      "seo": "SEO",
-      "seo_desc": "Search engine optimization and ranking improvement.",
+      "seo": "SEO & GEO",
+      "seo_desc": "Search engine optimization and local/global visibility.",
       "wp": "WordPress",
       "wp_desc": "Creation and customization of professional WordPress sites.",
       "btn": "Discover all our services →"
@@ -49,8 +50,8 @@
     "why_us": {
       "title": "Why choose VNP-WEB?",
       "subtitle": "Recognized expertise serving your digital success",
-      "team": "Experienced team",
-      "team_desc": "Passionate and qualified developers at your service.",
+      "team": "Single point of contact",
+      "team_desc": "Guillaume handles your project from start to finish. No middlemen, just dedicated web and SEO expertise.",
       "quality": "Quality guaranteed",
       "quality_desc": "Web solutions meeting industry standards.",
       "speed": "Fast delivery",
@@ -59,15 +60,21 @@
     "testimonials": {
       "title": "What our clients say",
       "subtitle": "Customer satisfaction is our priority",
-      "t1_name": "Marie Dubois",
-      "t1_role": "Online Store",
-      "t1_quote": "\"VNP-WEB transformed our online presence. Our traffic increased by 200%!\"",
-      "t2_name": "Jean Martin",
-      "t2_role": "Law Firm",
-      "t2_quote": "\"Professionalism and expertise. Our site perfectly reflects our brand image.\"",
-      "t3_name": "Sophie Laurent",
-      "t3_role": "Gourmet Restaurant",
-      "t3_quote": "\"A beautiful and easy-to-manage site. Our online bookings exploded!\""
+      "t1_name": "Mathieu R.",
+      "t1_role": "SME Manager",
+      "t1_quote": "\"We were looking for someone reliable to rebuild our site and work on our SEO. Guillaume took the time to truly understand our business. First page on our target queries. Very professional.\"",
+      "t2_name": "Sandrine L.",
+      "t2_role": "Communication Manager",
+      "t2_quote": "\"I needed SEO-optimized articles. Guillaume delivered high-quality, well-structured texts. The deadline was met, communication was smooth. I recommend him.\"",
+      "t3_name": "Théo M.",
+      "t3_role": "Freelancer",
+      "t3_quote": "\"Guillaume created my WordPress site from A to Z. Great advice on structure and content. I started receiving requests quickly.\"",
+      "t4_name": "Céline D.",
+      "t4_role": "E-commerce Owner",
+      "t4_quote": "\"Very comprehensive SEO audit. I appreciated getting a real roadmap rather than just a list of problems without solutions.\"",
+      "t5_name": "Jordan F.",
+      "t5_role": "Tech Blogger",
+      "t5_quote": "\"Guillaume has been writing and optimizing content for my blog for two years. Organic traffic has grown steadily.\""
     },
     "cta": {
       "title": "Ready to launch your project?",
@@ -75,13 +82,47 @@
       "btn": "Get a free quote →"
     }
   },
+  "about": {
+    "title": "About VNP-WEB",
+    "subtitle": "Discover the story, expertise, and values behind every web project.",
+    "role": "Freelance Web & SEO",
+    "location": "Occitanie, France (Worldwide)",
+    "hours": "Mon-Sat: 8am - 8pm",
+    "degree": "IT & Management Degrees",
+    "who": {
+      "title": "Who I am",
+      "p1": "My name is Guillaume Pruvost. Since 2014, I've been building web presences that last. VNP-WEB is not a factory agency, it's my freelance business. Located in Occitanie, France, I operate throughout France, Belgium, Switzerland, Luxembourg, Quebec, and all French and English-speaking areas worldwide.",
+      "p2": "My background? A natural curiosity for search algorithms, backed by a dual degree in IT (BTS SIO) and management (BTS MUC). I see the web from two angles: pure tech and business strategy. This defines my current method."
+    },
+    "what": {
+      "title": "What I actually do",
+      "seo": "My core business is web copywriting, SEO, and GEO. Every day, I write and optimize content on complex topics to drive qualified traffic to your pages.",
+      "support": "I also handle content optimization, web integration, and SMO (Social Media Optimization). I connect your entire digital ecosystem.",
+      "wp": "I am a WordPress and website creation specialist. Redesigns, responsive design, mobile optimization: I master the technical chain. If your project needs a different platform, I adapt.",
+      "translation": "Finally, I offer ENG-FR translation services. Perfect for businesses looking to conquer French or English markets with impactful text."
+    },
+    "clients": {
+      "title": "Pricing and Workflow",
+      "p1": "I assist SMEs, artisans, and international players. Distance is never a barrier. Google Meet, Zoom, or async emails: I adapt to your tools.",
+      "p2": "What stands out in my collaborations? Responsiveness. I am available Monday to Saturday to handle your digital emergencies.",
+      "p3": "No rigid pricing grids. I offer a custom price tailored to your project. As a pure reference, my basic rate for web copywriting without integration is €0.04 per word."
+    },
+    "why": {
+      "title": "Why VNP-WEB?",
+      "p1": "VNP stands for Visibility, Notoriety, Popularity. A beautiful website is useless if it remains invisible. My job is to expose it to the right people.",
+      "p2": "Artificial Intelligence is changing our industry. I focus on 100% human, authentic, and straightforward content. Adaptation is the key to web longevity."
+    }
+  },
   "serviceNames": {
     "redaction-web": "Web Copywriting",
     "seo": "SEO",
+    "geo": "GEO",
+    "integration": "Integration",
     "wordpress": "WordPress",
-    "integration": "Web Integration",
-    "creation-sites": "Website Creation",
-    "smo": "SMO (Social Media)"
+    "optimisation": "Content Optimization",
+    "translation": "ENG-FR Translation",
+    "smo": "SMO (Social Media)",
+    "creation-sites": "Website Creation"
   },
   "services": {
     "title": "Our Services",
@@ -104,6 +145,47 @@
       "option1_desc": "Choose a video slot",
       "option2_title": "Send a message",
       "option2_desc": "Response within 24h"
+    }
+  },
+  "services_page": {
+    "items": {
+      "redaction-web": {
+        "desc": "Creation of web and SEO-optimized content.",
+        "f1": "SEO-optimized writing", "f2": "Blog articles", "f3": "Product descriptions", "f4": "Sales pages", "f5": "Keyword research"
+      },
+      "seo": {
+        "desc": "Search engine optimization and local/global visibility.",
+        "f1": "Complete SEO Audit", "f2": "GEO Optimization", "f3": "Strategic keywords", "f4": "Competitor analysis", "f5": "Monthly reports"
+      },
+      "wordpress": {
+        "desc": "Creation and customization of professional WordPress sites.",
+        "f1": "WordPress Installation", "f2": "Custom theme", "f3": "Responsive design", "f4": "Speed optimization", "f5": "Training included"
+      },
+      "integration": {
+        "desc": "HTML/CSS/JS web integration of your mockups and designs.",
+        "f1": "HTML5/CSS3 Integration", "f2": "JavaScript", "f3": "100% responsive", "f4": "Cross-browser compatible", "f5": "Clean code"
+      },
+      "creation-sites": {
+        "desc": "Custom professional website creation.",
+        "f1": "Modern design", "f2": "Custom-made", "f3": "SEO Optimization", "f4": "Intuitive interface", "f5": "Satisfaction guaranteed"
+      },
+      "smo": {
+        "desc": "Optimization and management of your social media.",
+        "f1": "LinkedIn/X Management", "f2": "Content creation", "f3": "Multilingual (FR/EN/NL)", "f4": "Scheduling", "f5": "Reporting"
+      }
+    },
+    "additional": {
+      "s1": { "icon": "🔍", "title": "SEO & GEO", "desc": "Improve your local and global visibility on search engines." },
+      "s2": { "icon": "🌐", "title": "ENG-FR Translation", "desc": "Translate and adapt your content for the international market." },
+      "s3": { "icon": "🎨", "title": "Website Redesign", "desc": "Modernize your existing site with a fresh design." },
+      "s4": { "icon": "⚡", "title": "Content Optimization", "desc": "Enhance existing texts to satisfy Google's algorithms." }
+    },
+    "process": {
+      "p1": { "step": "01", "title": "Analysis", "desc": "We study your project in detail." },
+      "p2": { "step": "02", "title": "Design", "desc": "Creation and validation of the strategy." },
+      "p3": { "step": "03", "title": "Production", "desc": "Copywriting, SEO, and development." },
+      "p4": { "step": "04", "title": "Validation", "desc": "Testing on all devices." },
+      "p5": { "step": "05", "title": "Launch", "desc": "Go-live and monitoring." }
     }
   },
   "planning": {
@@ -129,33 +211,34 @@
   },
   "contact": {
     "title": "Contact Us",
-    "subtitle": "A question? A project? Our team is here to help you",
-    "formTitle": "Send us a message",
-    "formSubtitle": "Fill out the form below and we will get back to you as soon as possible.",
-    "location": "Our Location",
+    "subtitle": "A question? A custom project? Let's discuss it.",
+    "formTitle": "Tell me about your project",
+    "formSubtitle": "Describe your needs. I'll get back to you quickly with a tailored proposal.",
+    "location": "Service Areas",
     "subjectPrefix": "Quote request:",
     "form": {
       "name": "Full name",
       "email": "Email",
       "phone": "Phone",
       "subject": "Subject",
-      "subjectPlaceholder": "Ex: Quote request",
+      "subjectPlaceholder": "Ex: WordPress Redesign & SEO",
       "message": "Message",
-      "messagePlaceholder": "Describe your project in detail...",
+      "messagePlaceholder": "Detail your goals...",
       "send": "Send message",
       "sending": "Sending...",
-      "success": "Thank you for your message! We will respond within 24 hours.",
-      "error": "An error occurred"
+      "success": "Message sent successfully. I will reply within 24h.",
+      "error": "An error occurred while sending."
     },
     "info": {
-      "title": "Contact information",
+      "title": "Availability & Socials",
       "email": "Email",
       "phone": "Phone",
-      "address": "Address",
-      "hours": "Opening hours",
-      "hoursText": "24/7",
-      "hoursWeekend": "Always open",
-      "follow": "Follow us"
+      "address": "Location",
+      "hours": "Hours",
+      "hoursText": "Mon-Sat: 8am - 8pm",
+      "hoursWeekend": "Closed on Sunday",
+      "follow": "VNP-WEB Social Media",
+      "zone_text": "Based in Occitanie, France. Operating worldwide across French and English-speaking regions."
     }
   },
   "chatbot": {
@@ -188,15 +271,15 @@
     "success": "Successfully subscribed!"
   },
   "footer": {
-    "description": "Professional web development, SEO, and content writing for your online success.",
+    "description": "VNP-WEB: Web Copywriting, SEO, GEO, Web Creation, and Translation for your global success.",
     "quick_links": "Quick links",
     "our_services": "Our Services",
     "services_list": {
       "web_writing": "Web Copywriting",
-      "seo": "SEO",
+      "seo": "SEO & GEO",
       "wordpress": "WordPress",
-      "translation": "EN-FR Translation",
-      "site_creation": "Website Creation"
+      "translation": "ENG-FR Translation",
+      "smo": "Optimization & SMO"
     },
     "contact_title": "Contact",
     "rights": "All rights reserved.",
@@ -216,7 +299,7 @@
       "vatValue": "Not applicable, art. 293 B of CGI",
       "director": "Publication Director",
       "address": "Head Office",
-      "addressValue": "57 Bis Avenue du Razès 11150 BRAM",
+      "addressValue": "Occitanie, France (Worldwide services)",
       "email": "Email",
       "phone": "Phone"
     },
@@ -286,5 +369,55 @@
       "content": "For any questions regarding these legal notices or to exercise your rights, you can contact us:"
     },
     "updated": "Last updated"
+  },
+  "portfolio": {
+    "title": "My Portfolio & Case Studies",
+    "subtitle": "Discover how I guide my clients from obscurity to notoriety.",
+    "categories": {
+      "wp": "WordPress Creation",
+      "seo": "SEO Audit",
+      "writing": "Web Writing"
+    },
+    "labels": {
+      "challenge": "The challenge",
+      "solution": "The solution",
+      "result": "The result"
+    },
+    "case1": {
+      "title": "Showcase Redesign for a Fitness Coach",
+      "challenge": "An aging site, not mobile-friendly, and invisible locally.",
+      "solution": "Complete WordPress redesign, modern design, and local SEO optimization.",
+      "result": "Monthly contact requests multiplied by 3."
+    },
+    "case2": {
+      "title": "SEO Strategy for E-commerce",
+      "challenge": "Steady traffic decline following a Google penalty.",
+      "solution": "Full technical audit, toxic link cleanup, and internal linking overhaul.",
+      "result": "Returned to page 1 for 5 major keywords in 4 months."
+    },
+    "case3": {
+      "title": "Tech Blog: Content Strategy",
+      "challenge": "Need to simplify complex concepts (AI, Data) to attract leads.",
+      "solution": "Writing 2 expert articles per month with long-tail optimization.",
+      "result": "+150% organic traffic generated on the blog in one year."
+    },
+    "cta": {
+      "title": "Have a similar project in mind?",
+      "subtitle": "Let's discuss your goals and see how I can help.",
+      "btn": "Contact me"
+    }
+  },
+  "blog_page": {
+    "hero": {
+      "title": "My Tech Watch",
+      "subtitle": "SEO news, WordPress tips, and Web trends, updated daily."
+    },
+    "loading": "Searching for the latest news...",
+    "featured": "Featured",
+    "latest": "More news",
+    "read_article": "Read article",
+    "read_original": "Read original article",
+    "share": "Share:",
+    "source_suffix": "on"
   }
 }

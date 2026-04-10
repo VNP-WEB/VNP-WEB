@@ -12,8 +12,10 @@
   "dependencies": {
     "@nuxtjs/i18n": "^10.2.3",
     "@nuxtjs/supabase": "^2.0.4",
+    "google-translate-api-x": "^10.7.2",
     "nodemailer": "^8.0.3",
     "nuxt": "^4.4.2",
+    "rss-parser": "^3.13.0",
     "vue": "^3.5.30",
     "vue-router": "^5.0.3"
   },

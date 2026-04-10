@@ -7,13 +7,17 @@
           <h1>{{ $t('home.hero.title_start') }} <span class="highlight">{{ $t('home.hero.title_highlight') }}</span></h1>
           <p>{{ $t('home.hero.subtitle') }}</p>
           <div class="hero-buttons">
-            <button class="btn-primary">{{ $t('home.hero.btn') }}</button>
-            <button class="btn-secondary"></button>
+            <NuxtLink :to="localePath('/contact')" class="btn-primary">
+              {{ $t('home.hero.btn') }}
+            </NuxtLink>
+            <NuxtLink :to="localePath('/portfolio')" class="btn-secondary">
+              {{ $t('home.hero.btn_portfolio') }}
+            </NuxtLink>
           </div>
         </div>
         <div class="hero-image-wrapper">
           <div class="image-placeholder">
-            <img src="~/assets/images/accueil.jpeg" alt="VNP-WEB Logo" />
+            <img src="~/assets/images/accueil.jpeg" alt="VNP-WEB" />
           </div>
         </div>
       </div>
@@ -63,7 +67,7 @@
         </div>
       </div>
       <div class="text-center">
-        <button class="btn-outline">{{ $t('home.services.btn') }}</button>
+        <NuxtLink :to="localePath('/services')" class="btn-outline">{{ $t('home.services.btn') }}</NuxtLink>
       </div>
     </section>
 
@@ -77,19 +81,19 @@
           <div class="feature-icon blue-circle">📅</div>
           <h3>{{ $t('home.features.booking') }}</h3>
           <p>{{ $t('home.features.booking_desc') }}</p>
-          <a href="#" class="feature-link">{{ $t('home.features.learn_more') }}</a>
+          <NuxtLink :to="localePath('/planning')" class="feature-link">{{ $t('home.features.learn_more') }}</NuxtLink>
         </div>
         <div class="feature-item">
           <div class="feature-icon blue-circle">💬</div>
           <h3>{{ $t('home.features.chat') }}</h3>
           <p>{{ $t('home.features.chat_desc') }}</p>
-          <a href="#" class="feature-link">{{ $t('home.features.learn_more') }}</a>
+          <span class="feature-link" style="cursor: default;">{{ $t('home.features.learn_more') }}</span>
         </div>
         <div class="feature-item">
           <div class="feature-icon blue-circle">🛡️</div>
           <h3>{{ $t('home.features.payment') }}</h3>
           <p>{{ $t('home.features.payment_desc') }}</p>
-          <a href="#" class="feature-link">{{ $t('home.features.learn_more') }}</a>
+          <NuxtLink :to="localePath('/services')" class="feature-link">{{ $t('home.features.learn_more') }}</NuxtLink>
         </div>
       </div>
     </section>
@@ -124,35 +128,76 @@
         <p>{{ $t('home.testimonials.subtitle') }}</p>
       </div>
       <div class="testimonials-grid">
+        
         <div class="testimonial-card">
           <div class="client-info">
-            <div class="client-avatar">👩</div>
+            <div class="client-avatar">👨‍💼</div>
             <div>
               <h4>{{ $t('home.testimonials.t1_name') }}</h4>
               <span class="client-role">{{ $t('home.testimonials.t1_role') }}</span>
+              <div class="stars">
+                <svg v-for="i in 5" :key="'t1-'+i" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+              </div>
             </div>
           </div>
           <p class="quote">{{ $t('home.testimonials.t1_quote') }}</p>
         </div>
+
         <div class="testimonial-card">
           <div class="client-info">
-            <div class="client-avatar">👨‍🦲</div>
+            <div class="client-avatar">👩‍💻</div>
             <div>
               <h4>{{ $t('home.testimonials.t2_name') }}</h4>
               <span class="client-role">{{ $t('home.testimonials.t2_role') }}</span>
+              <div class="stars">
+                <svg v-for="i in 5" :key="'t2-'+i" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+              </div>
             </div>
           </div>
           <p class="quote">{{ $t('home.testimonials.t2_quote') }}</p>
         </div>
+
         <div class="testimonial-card">
           <div class="client-info">
-            <div class="client-avatar">👩‍🦰</div>
+            <div class="client-avatar">🏃‍♂️</div>
             <div>
               <h4>{{ $t('home.testimonials.t3_name') }}</h4>
               <span class="client-role">{{ $t('home.testimonials.t3_role') }}</span>
+              <div class="stars">
+                <svg v-for="i in 5" :key="'t3-'+i" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+              </div>
             </div>
           </div>
           <p class="quote">{{ $t('home.testimonials.t3_quote') }}</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="client-info">
+            <div class="client-avatar">👩‍⚕️</div>
+            <div>
+              <h4>{{ $t('home.testimonials.t4_name') }}</h4>
+              <span class="client-role">{{ $t('home.testimonials.t4_role') }}</span>
+              <div class="stars">
+                <svg v-for="i in 4" :key="'t4-'+i" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="star-icon empty-star"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+              </div>
+            </div>
+          </div>
+          <p class="quote">{{ $t('home.testimonials.t4_quote') }}</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="client-info">
+            <div class="client-avatar">👨‍💻</div>
+            <div>
+              <h4>{{ $t('home.testimonials.t5_name') }}</h4>
+              <span class="client-role">{{ $t('home.testimonials.t5_role') }}</span>
+              <div class="stars">
+                <svg v-for="i in 5" :key="'t5-'+i" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+              </div>
+            </div>
+          </div>
+          <p class="quote">{{ $t('home.testimonials.t5_quote') }}</p>
         </div>
       </div>
     </section>
@@ -161,12 +206,16 @@
       <div class="cta-content">
         <h2>{{ $t('home.cta.title') }}</h2>
         <p>{{ $t('home.cta.subtitle') }}</p>
-        <button class="btn-primary">{{ $t('home.cta.btn') }}</button>
+        <NuxtLink :to="localePath('/contact')" class="btn-primary-inverse">{{ $t('home.cta.btn') }}</NuxtLink>
       </div>
     </section>
 
   </div>
 </template>
+
+<script setup>
+const localePath = useLocalePath()
+</script>
 
 <style scoped>
 .home-page {
@@ -220,7 +269,10 @@
 .hero-buttons {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
+
+/* Boutons */
 .btn-primary {
   background-color: white;
   color: #0047ff;
@@ -230,15 +282,46 @@
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.2s;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn-primary:hover { transform: translateY(-2px); }
-.btn-secondary {
+
+.btn-primary-inverse {
   background-color: white;
+  color: #0047ff;
   border: none;
-  width: 100px;
+  padding: 15px 30px;
   border-radius: 8px;
-  opacity: 0.9;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-decoration: none;
+  display: inline-block;
 }
+.btn-primary-inverse:hover { transform: translateY(-2px); }
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s, color 0.2s;
+}
+.btn-secondary:hover { 
+  background-color: white; 
+  color: #0047ff; 
+}
+
 .hero-image-wrapper { flex: 1; width: 100%; }
 .image-placeholder {
   width: 100%;
@@ -299,7 +382,6 @@
   max-width: 1200px;
   margin: 0 auto 40px;
   display: grid;
-  /* Changement ici : minmax de 300px à 280px pour mieux s'adapter aux petits écrans */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
   gap: 30px;
 }
@@ -335,6 +417,9 @@
   font-weight: bold;
   cursor: pointer;
   transition: all 0.2s;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
 }
 .btn-outline:hover {
   border-color: #0047ff;
@@ -369,7 +454,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .client-avatar {
   font-size: 2.5rem;
@@ -381,9 +466,25 @@
   align-items: center;
   justify-content: center;
 }
-.client-info h4 { margin: 0; }
-.client-role { color: #888; font-size: 0.9rem; }
-.quote { font-style: italic; color: #555; }
+.client-info h4 { margin: 0; color: #0f172a;}
+.client-role { color: #888; font-size: 0.85rem; display: block; margin-top: 2px;}
+
+/* Étoiles SVG */
+.stars {
+  display: flex;
+  gap: 2px;
+  margin-top: 4px;
+}
+.star-icon {
+  width: 16px;
+  height: 16px;
+  color: #fbbf24;
+}
+.empty-star {
+  color: #e2e8f0;
+}
+
+.quote { font-style: italic; color: #555; line-height: 1.6; }
 
 .bottom-cta-section {
   background: linear-gradient(135deg, #0047ff 0%, #00b4ff 100%);
@@ -394,9 +495,7 @@
 .cta-content h2 { font-size: 2.5rem; margin-bottom: 15px; }
 .cta-content p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
 
-/* =========================================================
-   MEDIA QUERIES (RESPONSIVE POUR TABLETTES ET MOBILES)
-   ========================================================= */
+/* MEDIA QUERIES */
 @media (max-width: 992px) {
   .hero-container {
     flex-direction: column;
@@ -416,7 +515,7 @@
     gap: 30px;
   }
   .stat-item {
-    width: 40%; /* Force les stats en grille 2x2 sur tablette */
+    width: 40%; 
   }
 }
 
@@ -435,10 +534,7 @@
     width: 100%;
   }
   .btn-primary, .btn-secondary {
-    width: 100%; /* Les boutons prennent toute la largeur sur mobile */
-  }
-  .btn-secondary {
-    display: none; /* On masque le bouton vide secondaire sur mobile pour gagner de la place */
+    width: 100%; 
   }
   .image-placeholder {
     height: 220px;
@@ -447,10 +543,10 @@
     font-size: 2rem;
   }
   .stat-item {
-    width: 100%; /* Les stats s'empilent complètement sur petit mobile */
+    width: 100%; 
   }
   .services-grid, .features-grid, .why-us-grid, .testimonials-grid {
-    grid-template-columns: 1fr; /* Force 1 seule colonne sur mobile */
+    grid-template-columns: 1fr; 
   }
   .cta-content h2 {
     font-size: 2rem;

@@ -15,7 +15,8 @@
       "title_start": "Laten we samen uw ",
       "title_highlight": "perfecte website maken",
       "subtitle": "Krachtige, moderne en geoptimaliseerde weboplossingen om uw bedrijf te laten groeien.",
-      "btn": "Offerte aanvragen →"
+      "btn": "Offerte aanvragen →",
+      "btn_portfolio": "Bekijk ons portfolio"
     },
     "stats": {
       "projects": "Voltooide projecten",
@@ -26,11 +27,11 @@
     },
     "services": {
       "title": "Onze diensten",
-      "subtitle": "Uitgebreide weboplossingen voor al uw digitale behoeften",
+      "subtitle": "Uitgebreide weboplossingen for al uw digitale behoeften",
       "web_writing": "Web Copywriting",
-      "web_writing_desc": "Geoptimaliseerde content voor het web en natuurlijke referencering.",
-      "seo": "SEO",
-      "seo_desc": "Zoekmachineoptimalisatie en verbetering van de ranking.",
+      "web_writing_desc": "Geoptimaliseerde content for het web en natuurlijke referencering.",
+      "seo": "SEO & GEO",
+      "seo_desc": "Zoekmachineoptimalisatie en lokale/wereldwijde zichtbaarheid.",
       "wp": "WordPress",
       "wp_desc": "Creatie en aanpassing van professionele WordPress-sites.",
       "btn": "Ontdek al onze diensten →"
@@ -48,9 +49,9 @@
     },
     "why_us": {
       "title": "Waarom kiezen voor VNP-WEB?",
-      "subtitle": "Erkende expertise voor uw digitaal succes",
-      "team": "Ervaren team",
-      "team_desc": "Gepassioneerde en gekwalificeerde ontwikkelaars tot uw dienst.",
+      "subtitle": "Erkende expertise for uw digitaal succes",
+      "team": "Eén vast aanspreekpunt",
+      "team_desc": "Guillaume beheert uw project van begin tot eind. Geen tussenpersonen, alleen toegewijde web- en SEO-expertise.",
       "quality": "Kwaliteit gegarandeerd",
       "quality_desc": "Weboplossingen volgens industriestandaarden.",
       "speed": "Snelle levering",
@@ -59,15 +60,21 @@
     "testimonials": {
       "title": "Wat onze klanten zeggen",
       "subtitle": "Klanttevredenheid is onze prioriteit",
-      "t1_name": "Marie Dubois",
-      "t1_role": "Online Winkel",
-      "t1_quote": "\"VNP-WEB heeft onze online aanwezigheid getransformeerd. Ons verkeer is met 200% toegenomen!\"",
-      "t2_name": "Jean Martin",
-      "t2_role": "Advocatenkantoor",
-      "t2_quote": "\"Professionaliteit en expertise. Onze site weerspiegelt perfect ons merkimago.\"",
-      "t3_name": "Sophie Laurent",
-      "t3_role": "Gastronomisch Restaurant",
-      "t3_quote": "\"Een prachtige en eenvoudig te beheren site. Onze online reserveringen zijn geëxplodeerd!\""
+      "t1_name": "Mathieu R.",
+      "t1_role": "MKB-directeur",
+      "t1_quote": "\"We zochten een betrouwbaar persoon om onze site te vernieuwen en aan onze lokale SEO te werken. Guillaume nam de tijd om ons bedrijf goed te begrijpen. Het resultaat is er: eerste pagina for onze doelzoekopdrachten.\"",
+      "t2_name": "Sandrine L.",
+      "t2_role": "Communicatiemanager",
+      "t2_quote": "\"Ik had SEO-geoptimaliseerde artikelen nodig. Guillaume leverde hoogwaardige teksten. De deadline werd gehaald en de communicatie verliep vlot.\"",
+      "t3_name": "Théo M.",
+      "t3_role": "Freelancer",
+      "t3_quote": "\"Guillaume heeft mijn WordPress-website van A tot Z gemaakt. Goed advies over de structuur. Een paar weken na de lancering begon ik aanvragen te ontvangen.\"",
+      "t4_name": "Céline D.",
+      "t4_role": "E-commerce Eigenaar",
+      "t4_quote": "\"Zeer uitgebreide SEO-audit. Ik waardeerde het dat hij me een echte roadmap gaf in plaats van alleen een lijst met problemen.\"",
+      "t5_name": "Jordan F.",
+      "t5_role": "Tech Blogger",
+      "t5_quote": "\"Guillaume schrijft en optimaliseert nu al twee jaar content for mijn blog. Het organische verkeer is gestaag gegroeid.\""
     },
     "cta": {
       "title": "Klaar om uw project te lanceren?",
@@ -75,13 +82,47 @@
       "btn": "Vraag een gratis offerte aan →"
     }
   },
+  "about": {
+    "title": "Over VNP-WEB",
+    "subtitle": "Ontdek het verhaal, de expertise en de waarden achter elk webproject.",
+    "role": "Freelance Web & SEO",
+    "location": "Occitanie, Frankrijk (Wereldwijd)",
+    "hours": "Ma-Za: 8u - 20u",
+    "degree": "IT & Management",
+    "who": {
+      "title": "Wie ik ben",
+      "p1": "Mijn naam is Guillaume Pruvost. Sinds 2014 bouw ik webaanwezigheden die lang meegaan. Achter VNP-WEB schuilt geen massabureau, alleen ik. Gehuisvest in Occitanie (Frankrijk), werk ik wereldwijd in Frans- en Engelstalige gebieden.",
+      "p2": "Het begon allemaal met nieuwsgierigheid naar zoekmachines, gecombineerd met een IT- en managementachtergrond. Dat betekent dat ik het web bekeek via techniek en strategie. Deze combinatie bepaalt nog steeds hoe ik werk."
+    },
+    "what": {
+      "title": "Wat ik concreet doe",
+      "seo": "Mijn kernactiviteit is SEO, GEO en web copywriting. Elke dag optimaliseer ik content over complexe onderwerpen om gekwalificeerd verkeer aan te trekken.",
+      "support": "Daarnaast bied ik contentoptimalisatie, webintegratie en SMO (Social Media Optimization). Uw ecosysteem moet perfect verbonden zijn.",
+      "wp": "Ik ben ook een WordPress-expert. Creatie, herontwerpen, mobiele optimalisatie: ik beheers het ecosysteem. Voor andere platforms pas ik me aan.",
+      "translation": "Ten slotte bied ik ENG-FR vertalingen aan for bedrijven die internationale markten willen veroveren."
+    },
+    "clients": {
+      "title": "Tarieven en werkwijze",
+      "p1": "Ik werk met het MKB, ambachtslieden en internationale spelers. Afstand is geen probleem. Zoom of Google Meet: ik pas me aan uw tools aan.",
+      "p2": "Wat het vaakst terugkomt in feedback? Reactiesnelheid. Ik ben bereikbaar van maandag tot zaterdag for uw digitale projecten.",
+      "p3": "Ik hanteer geen vaste prijzen. Ik bied een gepersonaliseerde prijs op basis van uw project. Ter indicatie: mijn basistarief for copywriting zonder integratie is € 0,04 per woord."
+    },
+    "why": {
+      "title": "Waarom VNP-WEB?",
+      "p1": "VNP staat for Zichtbaarheid, Bekendheid, Populariteit. Een website is niets waard als hij onzichtbaar blijft.",
+      "p2": "AI verandert onze sector. Daarom richt ik me op 100% menselijke, authentieke content. Aanpassing is de sleutel tot online succes."
+    }
+  },
   "serviceNames": {
     "redaction-web": "Web Copywriting",
     "seo": "SEO",
+    "geo": "GEO",
+    "integration": "Integratie",
     "wordpress": "WordPress",
-    "integration": "Web Integratie",
-    "creation-sites": "Website Creatie",
-    "smo": "SMO (Sociale Media)"
+    "optimisation": "Contentoptimalisatie",
+    "translation": "ENG-FR Vertaling",
+    "smo": "SMO (Sociale Media)",
+    "creation-sites": "Website Creatie"
   },
   "services": {
     "title": "Onze Diensten",
@@ -106,10 +147,51 @@
       "option2_desc": "Antwoord binnen 24 uur"
     }
   },
+  "services_page": {
+    "items": {
+      "redaction-web": {
+        "desc": "Creatie van web- en SEO-geoptimaliseerde content.",
+        "f1": "SEO-geoptimaliseerd schrijven", "f2": "Blogartikelen", "f3": "Productbeschrijvingen", "f4": "Verkooppagina's", "f5": "Trefwoordonderzoek"
+      },
+      "seo": {
+        "desc": "Zoekmachineoptimalisatie en lokale/wereldwijde zichtbaarheid.",
+        "f1": "Volledige SEO-audit", "f2": "GEO-optimalisatie", "f3": "Strategische trefwoorden", "f4": "Concurrentieanalyse", "f5": "Maandelijkse rapporten"
+      },
+      "wordpress": {
+        "desc": "Creatie en aanpassing van professionele WordPress-sites.",
+        "f1": "WordPress Installatie", "f2": "Op maat gemaakt thema", "f3": "Responsive design", "f4": "Snelheidsoptimalisatie", "f5": "Inclusief training"
+      },
+      "integration": {
+        "desc": "HTML/CSS/JS webintegratie van uw mockups en designs.",
+        "f1": "HTML5/CSS3 Integratie", "f2": "JavaScript", "f3": "100% responsive", "f4": "Cross-browser compatibel", "f5": "Schone code"
+      },
+      "creation-sites": {
+        "desc": "Op maat gemaakte professionele website creatie.",
+        "f1": "Modern design", "f2": "Op maat gemaakt", "f3": "SEO Optimalisatie", "f4": "Intuïtieve interface", "f5": "Tevredenheid gegarandeerd"
+      },
+      "smo": {
+        "desc": "Optimalisatie en beheer van uw sociale media.",
+        "f1": "LinkedIn/X Beheer", "f2": "Contentcreatie", "f3": "Meertalig (FR/EN/NL)", "f4": "Planning", "f5": "Rapportage"
+      }
+    },
+    "additional": {
+      "s1": { "icon": "🔍", "title": "SEO & GEO", "desc": "Verbeter uw lokale en wereldwijde zichtbaarheid op zoekmachines." },
+      "s2": { "icon": "🌐", "title": "ENG-FR Vertaling", "desc": "Vertaal en pas uw content aan voor de internationale markt." },
+      "s3": { "icon": "🎨", "title": "Website Herontwerp", "desc": "Moderniseer uw bestaande site met een fris design." },
+      "s4": { "icon": "⚡", "title": "Contentoptimalisatie", "desc": "Verbeter bestaande teksten om aan de algoritmes van Google te voldoen." }
+    },
+    "process": {
+      "p1": { "step": "01", "title": "Analyse", "desc": "We bestuderen uw project in detail." },
+      "p2": { "step": "02", "title": "Ontwerp", "desc": "Creatie en validatie van de strategie." },
+      "p3": { "step": "03", "title": "Productie", "desc": "Copywriting, SEO en ontwikkeling." },
+      "p4": { "step": "04", "title": "Validatie", "desc": "Testen op alle apparaten." },
+      "p5": { "step": "05", "title": "Lancering", "desc": "Livegang en monitoring." }
+    }
+  },
   "planning": {
-    "reasonPrefix": "Consultatie voor:",
+    "reasonPrefix": "Consultatie for:",
     "hero_title": "Consultatieplanning",
-    "hero_subtitle": "Selecteer een beschikbaar tijdslot voor uw afspraak",
+    "hero_subtitle": "Selecteer een beschikbaar tijdslot for uw afspraak",
     "today": "Vandaag",
     "unavailable": "Niet beschikbaar",
     "reserve": "Boeken",
@@ -120,7 +202,7 @@
     "selected_date": "Op {date} om {time}",
     "form_name": "Volledige naam",
     "form_email": "E-mailadres",
-    "form_reason": "Reden voor afspraak",
+    "form_reason": "Reden for afspraak",
     "cancel": "Annuleren",
     "confirm": "BEVESTIGEN",
     "loading": "Verwerken...",
@@ -129,40 +211,41 @@
   },
   "contact": {
     "title": "Neem contact op",
-    "subtitle": "Een vraag? Een project? Ons team staat voor u klaar",
-    "formTitle": "Stuur ons een bericht",
-    "formSubtitle": "Vul onderstaand formulier in en wij nemen zo snel mogelijk contact met u op.",
-    "location": "Onze locatie",
+    "subtitle": "Een project op maat? Laten we het bespreken.",
+    "formTitle": "Vertel me over uw project",
+    "formSubtitle": "Beschrijf uw behoefte. Ik neem snel contact op met een passend voorstel.",
+    "location": "Werkgebieden",
     "subjectPrefix": "Offerte aanvraag:",
     "form": {
       "name": "Volledige naam",
       "email": "E-mail",
       "phone": "Telefoon",
       "subject": "Onderwerp",
-      "subjectPlaceholder": "Ex: Offerte aanvraag",
+      "subjectPlaceholder": "Ex: SEO Optimalisatie",
       "message": "Bericht",
-      "messagePlaceholder": "Beschrijf uw project in detail...",
+      "messagePlaceholder": "Beschrijf uw doelen in detail...",
       "send": "Verzenden",
       "sending": "Verzenden...",
-      "success": "Bedankt voor uw bericht! We antwoorden binnen 24 uur.",
+      "success": "Bedankt for uw bericht! We antwoorden binnen 24 uur.",
       "error": "Er is een fout opgetreden"
     },
     "info": {
-      "title": "Contactinformatie",
+      "title": "Beschikbaarheid & Socials",
       "email": "E-mail",
       "phone": "Telefoon",
-      "address": "Adres",
+      "address": "Locatie",
       "hours": "Openingstijden",
-      "hoursText": "24/7",
-      "hoursWeekend": "Altijd open",
-      "follow": "Volg ons"
+      "hoursText": "Ma-Za: 8u - 20u",
+      "hoursWeekend": "Zondag gesloten",
+      "follow": "VNP-WEB Sociale Media",
+      "zone_text": "Gevestigd in Occitanie. Actief in Frankrijk, België, Zwitserland en wereldwijd in Frans/Engelstalige gebieden."
     }
   },
   "chatbot": {
     "title": "VNP-WEB Assistent",
     "status": "Online",
     "placeholder": "Typ uw bericht...",
-    "welcome_msg": "Hallo! Ik ben de VNP-WEB assistent. Wat kan ik voor u doen?",
+    "welcome_msg": "Hallo! Ik ben de VNP-WEB assistent. Wat kan ik for u doen?",
     "fallback_msg": "Ik ben een geautomatiseerde assistent. Kunt u een van de onderstaande opties kiezen of contact met ons opnemen?",
     "options": {
       "quote": "Offerte aanvragen",
@@ -172,7 +255,7 @@
     "answers": {
       "quote": "Uitstekende keuze! U kunt uw project direct op onze contactpagina toelichten:",
       "services": "Wij zijn experts in het maken van websites (WordPress, maatwerk), SEO en web copywriting. Ontdek onze expertise hier:",
-      "other": "Voor specifieke vragen staat ons menselijke team voor u klaar! Mail ons op sio.pruvost{'@'}gmail.com of gebruik ons formulier:"
+      "other": "Voor specifieke vragen staat ons menselijke team for u klaar! Mail ons op sio.pruvost{'@'}gmail.com of gebruik ons formulier:"
     },
     "links": {
       "contact": "Ga naar de Contactpagina →",
@@ -188,15 +271,15 @@
     "success": "Succesvol ingeschreven!"
   },
   "footer": {
-    "description": "Professionele webontwikkeling, SEO en contentcreatie voor uw online succes.",
+    "description": "VNP-WEB: Web Copywriting, SEO, GEO, Website Creatie en Vertaling for uw wereldwijde succes.",
     "quick_links": "Snelle links",
     "our_services": "Onze Diensten",
     "services_list": {
       "web_writing": "Web Copywriting",
-      "seo": "SEO",
+      "seo": "SEO & GEO",
       "wordpress": "WordPress",
-      "translation": "EN-FR Vertaling",
-      "site_creation": "Website Creatie"
+      "translation": "ENG-FR Vertaling",
+      "smo": "Optimalisatie & SMO"
     },
     "contact_title": "Contact",
     "rights": "Alle rechten voorbehouden.",
@@ -216,7 +299,7 @@
       "vatValue": "Niet van toepassing, art. 293 B van CGI",
       "director": "Directeur publicatie",
       "address": "Hoofdkantoor",
-      "addressValue": "57 Bis Avenue du Razès 11150 BRAM",
+      "addressValue": "Occitanie, Frankrijk (Wereldwijde diensten)",
       "email": "E-mail",
       "phone": "Telefoon"
     },
@@ -262,19 +345,19 @@
     "cookies": {
       "title": "5. Cookies",
       "content1": "De VNP-WEB site gebruikt cookies om de gebruikerservaring te verbeteren en het siteverkeer te analyseren.",
-      "content2": "U kunt cookies op elk moment uitschakkelen in uw browserinstellingen. Sommige functies van de site zijn dan mogelijk niet meer beschikbaar.",
+      "content2": "U kunt cookies op elk moment uitschakelen in uw browserinstellingen. Sommige functies van de site zijn dan mogelijk niet meer beschikbaar.",
       "note": "Opmerking",
-      "noteContent": "Deze site gebruikt alleen technische cookies die nodig zijn voor de goede werking van de site (lokale opslag voor taalvoorkeuren)."
+      "noteContent": "Deze site gebruikt alleen technische cookies die nodig zijn for de goede werking van de site (lokale opslag for taalvoorkeuren)."
     },
     "liability": {
       "title": "6. Aansprakelijkheid",
       "content1": "VNP-WEB streeft ernaar de juistheid en actualisering van de informatie op deze site te waarborgen en behoudt zich het recht voor de inhoud op elk moment en zonder voorafgaande kennisgeving te corrigeren.",
       "content2": "VNP-WEB kan echter de exactheid, precisie of volledigheid van de informatie op deze site niet garanderen.",
-      "content3": "Bijgevolg wijst VNP-WEB elke verantwoordelijkheid af voor onnauwkeurigheden, onjuistheden of weglatingen met betrekking tot informatie die op deze site beschikbaar is."
+      "content3": "Bijgevolg wijst VNP-WEB elke verantwoordelijkheid af for onnauwkeurigheden, onjuistheden of weglatingen met betrekking tot informatie die op deze site beschikbaar is."
     },
     "links": {
       "title": "7. Hyperlinks",
-      "content1": "De VNP-WEB site kan links bevatten naar andere websites. VNP-WEB heeft geen middelen om deze sites te controleren en aanvaardt geen verantwoordelijkheid voor hun inhoud.",
+      "content1": "De VNP-WEB site kan links bevatten naar andere websites. VNP-WEB heeft geen middelen om deze sites te controleren en aanvaardt geen verantwoordelijkheid for hun inhoud.",
       "content2": "Het aanmaken van hyperlinks naar de VNP-WEB site vereist voorafgaande schriftelijke toestemming."
     },
     "law": {
@@ -286,5 +369,55 @@
       "content": "Voor vragen over deze juridische mededelingen of om uw rechten uit te oefenen, kunt u contact met ons opnemen:"
     },
     "updated": "Laatst bijgewerkt"
+  },
+  "portfolio": {
+    "title": "Mijn Portfolio & Casestudy's",
+    "subtitle": "Ontdek hoe ik mijn klanten begeleid van onbekendheid naar succes.",
+    "categories": {
+      "wp": "WordPress Creatie",
+      "seo": "SEO Audit",
+      "writing": "Webredactie"
+    },
+    "labels": {
+      "challenge": "De uitdaging",
+      "solution": "De oplossing",
+      "result": "Het resultaat"
+    },
+    "case1": {
+      "title": "Website Herontwerp for een Fitnesscoach",
+      "challenge": "Een verouderde site, niet mobielvriendelijk en lokaal onzichtbaar.",
+      "solution": "Volledig WordPress-herontwerp, modern design en lokale SEO-optimalisatie.",
+      "result": "Verdrievoudiging van het aantal maandelijkse contactaanvragen."
+    },
+    "case2": {
+      "title": "SEO-strategie for E-commerce",
+      "challenge": "Constante daling in verkeer na een Google-straf.",
+      "solution": "Volledige technische audit, opschonen van toxische links en herziening van interne links.",
+      "result": "Terug op pagina 1 for 5 belangrijke trefwoorden binnen 4 maanden."
+    },
+    "case3": {
+      "title": "Tech Blog: Contentstrategie",
+      "challenge": "Behoefte om complexe concepten (AI, Data) te vereenvoudigen om leads aan te trekken.",
+      "solution": "Schrijven van 2 expertartikelen per maand met long-tail optimalisatie.",
+      "result": "+150% organisch verkeer gegenereerd op de blog in één jaar."
+    },
+    "cta": {
+      "title": "Een vergelijkbaar project in gedachten?",
+      "subtitle": "Laten we uw doelen bespreken en kijken hoe ik u kan helpen.",
+      "btn": "Contact met mij opnemen"
+    }
+  },
+  "blog_page": {
+    "hero": {
+      "title": "Mijn Tech Veille",
+      "subtitle": "SEO-nieuws, WordPress-tips en webtrends, dagelijks bijgewerkt."
+    },
+    "loading": "Zoeken naar het laatste nieuws...",
+    "featured": "Uitgelicht",
+    "latest": "Ander nieuws",
+    "read_article": "Lees artikel",
+    "read_original": "Lees origineel artikel",
+    "share": "Delen:",
+    "source_suffix": "op"
   }
 }

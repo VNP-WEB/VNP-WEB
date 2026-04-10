@@ -26,12 +26,12 @@
 
           <div class="service-content">
             <h3>{{ $t('serviceNames.' + service.id) }}</h3>
-            <p class="service-desc">{{ service.description }}</p>
+            <p class="service-desc">{{ $t('services_page.items.' + service.id + '.desc') }}</p>
 
             <ul class="features-list">
-              <li v-for="(feature, idx) in service.features.slice(0, 5)" :key="idx">
+              <li v-for="i in 5" :key="i">
                 <span class="check-icon">✅</span>
-                <span>{{ feature }}</span>
+                <span>{{ $t('services_page.items.' + service.id + '.f' + i) }}</span>
               </li>
             </ul>
 
@@ -50,10 +50,10 @@
       </div>
       
       <div class="additional-grid">
-        <div v-for="(service, index) in additionalServices" :key="index" class="additional-card">
-          <div class="icon-wrapper">{{ service.icon }}</div>
-          <h3>{{ service.title }}</h3>
-          <p>{{ service.description }}</p>
+        <div v-for="id in additionalServicesList" :key="id" class="additional-card">
+          <div class="icon-wrapper">{{ $t('services_page.additional.' + id + '.icon') }}</div>
+          <h3>{{ $t('services_page.additional.' + id + '.title') }}</h3>
+          <p>{{ $t('services_page.additional.' + id + '.desc') }}</p>
         </div>
       </div>
     </section>
@@ -65,10 +65,10 @@
       </div>
       
       <div class="process-grid">
-        <div v-for="(item, index) in process" :key="index" class="process-step">
-          <div class="step-number">{{ item.step }}</div>
-          <h3>{{ item.title }}</h3>
-          <p>{{ item.description }}</p>
+        <div v-for="id in processList" :key="id" class="process-step">
+          <div class="step-number">{{ $t('services_page.process.' + id + '.step') }}</div>
+          <h3>{{ $t('services_page.process.' + id + '.title') }}</h3>
+          <p>{{ $t('services_page.process.' + id + '.desc') }}</p>
         </div>
       </div>
     </section>
@@ -130,7 +130,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const localePath = useLocalePath() // Outil magique pour garder la langue dans les liens !
+const localePath = useLocalePath() 
 const showChoiceModal = ref(false)
 const selectedService = ref(null)
 
@@ -140,29 +140,16 @@ const openChoiceModal = (service) => {
 }
 
 const servicesList = [
-  { id: 'redaction-web', description: 'Rédaction de contenus optimisés pour le web et le référencement', features: ['Rédaction optimisée SEO', 'Articles de blog', 'Fiches produits', 'Pages de vente', 'Recherche mots-clés'], image: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80', popular: true },
-  { id: 'seo', description: 'Optimisation pour les moteurs de recherche et amélioration du référencement naturel', features: ['Audit SEO complet', 'Optimisation technique', 'Mots-clés stratégiques', 'Analyse concurrence', 'Rapports mensuels'], image: 'https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=800&q=80', popular: true },
-  { id: 'wordpress', description: 'Création et personnalisation de sites WordPress professionnels', features: ['Installation WordPress', 'Thème sur-mesure', 'Design responsive', 'Optimisation vitesse', 'Formation incluse'], image: 'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&q=80', popular: true },
-  { id: 'integration', description: 'Intégration web HTML/CSS/JS de vos maquettes et designs', features: ['Intégration HTML5/CSS3', 'JavaScript', '100% responsive', 'Compatible navigateurs', 'Code propre'], image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80', popular: false },
-  { id: 'creation-sites', description: 'Création de sites web professionnels sur-mesure', features: ['Design moderne', 'Sur-mesure', 'Optimisation SEO', 'Interface intuitive', 'Garantie satisfaction'], image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80', popular: false },
-  { id: 'smo', description: 'Optimisation et gestion de vos réseaux sociaux Facebook et LinkedIn', features: ['Gestion Facebook/LinkedIn', 'Création de contenu', 'Multilingue (FR/EN/NL)', 'Planification', 'Rapports'], image: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=800&q=80', popular: false }
+  { id: 'redaction-web', image: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80', popular: true },
+  { id: 'seo', image: 'https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=800&q=80', popular: true },
+  { id: 'wordpress', image: 'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&q=80', popular: true },
+  { id: 'integration', image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80', popular: false },
+  { id: 'creation-sites', image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80', popular: false },
+  { id: 'smo', image: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=800&q=80', popular: false }
 ]
 
-const additionalServices = [
-  { icon: '🔍', title: 'SEO & Référencement', description: 'Améliorez votre visibilité sur les moteurs de recherche et attirez plus de trafic.' },
-  { icon: '🔧', title: 'Maintenance & Support', description: 'Assurez la pérennité de votre site avec notre service de maintenance technique.' },
-  { icon: '🎨', title: 'Refonte de site', description: 'Modernisez votre site existant avec un design actuel et des fonctionnalités améliorées.' },
-  { icon: '⚡', title: 'Optimisation performance', description: 'Accélérez votre site pour une meilleure expérience utilisateur.' },
-  { icon: '🛡️', title: 'Sécurité & SSL', description: 'Protégez votre site et vos données avec nos solutions de sécurité avancées.' }
-]
-
-const process = [
-  { step: '01', title: 'Analyse', description: 'Nous étudions votre projet en détail.' },
-  { step: '02', title: 'Conception', description: 'Création et validation des maquettes.' },
-  { step: '03', title: 'Développement', description: 'Programmation avec les dernières technos.' },
-  { step: '04', title: 'Tests', description: 'Vérification sur tous les appareils.' },
-  { step: '05', title: 'Mise en ligne', description: 'Déploiement et formation.' }
-]
+const additionalServicesList = ['s1', 's2', 's3', 's4']
+const processList = ['p1', 'p2', 'p3', 'p4', 'p5']
 
 useHead({
   title: 'Nos Services - VNP-WEB'
@@ -204,10 +191,18 @@ useHead({
 .btn-primary:hover { background: #0030cc; }
 .btn-white { background: white; color: #0047ff; padding: 15px 35px; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-block; transition: transform 0.2s; }
 .btn-white:hover { transform: translateY(-2px); }
-
 .animate-in { animation: fadeIn 0.3s ease-out; }
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px) scale(0.95); }
   to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (max-width: 768px) {
+  .services-hero, .main-services, .additional-services, .process-section, .bottom-cta { padding: 40px 20px; }
+  .hero-container h1 { font-size: 2.2rem; }
+  .section-header h2 { font-size: 2rem; }
+  .cta-content h2 { font-size: 2rem; }
+  .services-grid { grid-template-columns: 1fr; }
 }
 </style>
