@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/supabase',
     '@nuxtjs/tailwindcss'
+    '@nuxtjs/sitemap'
   ],
 
   // 2. CONFIGURATION SUPABASE : Pour éviter qu'il bloque les visiteurs non connectés

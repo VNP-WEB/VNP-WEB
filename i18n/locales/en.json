@@ -85,12 +85,12 @@
   "about": {
     "title": "About VNP-WEB",
     "subtitle": "Discover the story, expertise, and values behind every web project.",
-    "role": "Freelance Web & SEO",
+    "role": "Web & SEO Entrepreneur",
     "location": "Occitanie, France (Worldwide)",
     "hours": "Mon-Sat: 8am - 8pm",
     "degree": "IT & Management Degrees",
     "who": {
-      "title": "Who I am",
+      "title": "Who am I?",
       "p1": "My name is Guillaume Pruvost. Since 2014, I've been building web presences that last. VNP-WEB is not a factory agency, it's my freelance business. Located in Occitanie, France, I operate throughout France, Belgium, Switzerland, Luxembourg, Quebec, and all French and English-speaking areas worldwide.",
       "p2": "My background? A natural curiosity for search algorithms, backed by a dual degree in IT (BTS SIO) and management (BTS MUC). I see the web from two angles: pure tech and business strategy. This defines my current method."
     },
@@ -125,7 +125,7 @@
     "creation-sites": "Website Creation"
   },
   "services": {
-    "title": "Our Services",
+    "title": "Services",
     "subtitle": "Complete and professional web solutions to meet all your digital needs",
     "mainOffers": "Our main offers",
     "mainOffersSubtitle": "Choose the solution that best fits your needs",
@@ -210,7 +210,7 @@
     "swipe_hint": "👈 Swipe to see more 👉"
   },
   "contact": {
-    "title": "Contact Us",
+    "title": "Contact VNP-WEB",
     "subtitle": "A question? A custom project? Let's discuss it.",
     "formTitle": "Tell me about your project",
     "formSubtitle": "Describe your needs. I'll get back to you quickly with a tailored proposal.",
@@ -271,15 +271,16 @@
     "success": "Successfully subscribed!"
   },
   "footer": {
-    "description": "VNP-WEB: Web Copywriting, SEO, GEO, Web Creation, and Translation for your global success.",
+    "description": "VNP-WEB: Over 11 years of experience in SEO, copywriting & WordPress!",
     "quick_links": "Quick links",
-    "our_services": "Our Services",
+    "our_services": "Services",
     "services_list": {
       "web_writing": "Web Copywriting",
       "seo": "SEO & GEO",
       "wordpress": "WordPress",
       "translation": "ENG-FR Translation",
-      "smo": "Optimization & SMO"
+      "smo": "Optimization & SMO",
+      "site_creation": "Website Creation"
     },
     "contact_title": "Contact",
     "rights": "All rights reserved.",
@@ -371,7 +372,7 @@
     "updated": "Last updated"
   },
   "portfolio": {
-    "title": "My Portfolio & Case Studies",
+    "title": "Portfolio & Case Studies",
     "subtitle": "Discover how I guide my clients from obscurity to notoriety.",
     "categories": {
       "wp": "WordPress Creation",
@@ -409,7 +410,7 @@
   },
   "blog_page": {
     "hero": {
-      "title": "My Tech Watch",
+      "title": "Tech Watch",
       "subtitle": "SEO news, WordPress tips, and Web trends, updated daily."
     },
     "loading": "Searching for the latest news...",

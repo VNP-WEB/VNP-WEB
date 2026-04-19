@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@nuxtjs/i18n": "^10.2.3",
+    "@nuxtjs/sitemap": "^8.0.13",
     "@nuxtjs/supabase": "^2.0.4",
     "google-translate-api-x": "^10.7.2",
     "nodemailer": "^8.0.3",

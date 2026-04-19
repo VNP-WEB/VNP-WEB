@@ -85,12 +85,12 @@
   "about": {
     "title": "À propos de VNP-WEB",
     "subtitle": "Découvrez l'histoire, l'expertise et les valeurs qui animent chaque projet web.",
-    "role": "Freelance Web & SEO",
+    "role": "Entrepreneur Web & SEO",
     "location": "Occitanie (Monde entier)",
     "hours": "Lun-Sam : 8h - 20h",
     "degree": "BTS SIO & MUC",
     "who": {
-      "title": "Qui je suis",
+      "title": "Qui suis-je ?",
       "p1": "Je m'appelle Guillaume Pruvost. Depuis 2014, je construis des présences web durables. VNP-WEB n'est pas une agence usine, c'est mon entreprise freelance. Localisé en Occitanie, j'agis dans toute la France, en Belgique, en Suisse, au Luxembourg, au Québec et dans toutes les zones francophones et anglophones du monde.",
       "p2": "Mon parcours ? Une curiosité naturelle pour les algorithmes de recherche, complétée par un double bagage académique en informatique (BTS SIO) et en management (BTS MUC), après un Bac STG Mercatique. Je vois le web sous deux angles : la technique pure et la stratégie business. Ce combo définit ma méthode actuelle."
     },
@@ -125,7 +125,7 @@
     "creation-sites": "Création de sites"
   },
   "services": {
-    "title": "Nos Services",
+    "title": "Services",
     "subtitle": "Des solutions web complètes pour répondre à tous vos besoins digitaux",
     "mainOffers": "Nos offres principales",
     "mainOffersSubtitle": "Choisissez la solution qui correspond le mieux à vos besoins",
@@ -210,7 +210,7 @@
     "swipe_hint": "👈 Glissez pour voir plus 👉"
   },
   "contact": {
-    "title": "Contactez-nous",
+    "title": "Contactez VNP-WEB",
     "subtitle": "Une question ? Un projet sur mesure ? Discutons-en.",
     "formTitle": "Parlez-moi de votre projet",
     "formSubtitle": "Décrivez votre besoin. Je vous recontacte rapidement avec une proposition adaptée.",
@@ -271,15 +271,16 @@
     "success": "Inscription réussie !"
   },
   "footer": {
-    "description": "VNP-WEB : Rédaction, SEO, GEO, Création de sites et Traduction pour votre réussite globale.",
+    "description": "VNP-WEB : Plus de 11 ans d'expérience dans le SEO, la rédaction & WordPress !",
     "quick_links": "Liens rapides",
-    "our_services": "Nos Services",
+    "our_services": "Services",
     "services_list": {
       "web_writing": "Rédaction web",
       "seo": "SEO & GEO",
       "wordpress": "WordPress",
       "translation": "Traduction ENG-FR",
-      "smo": "Optimisation & SMO"
+      "smo": "Optimisation & SMO",
+      "site_creation": "Création de sites"
     },
     "contact_title": "Contact",
     "rights": "Tous droits réservés.",
@@ -371,7 +372,7 @@
     "updated": "Dernière mise à jour"
   },
   "portfolio": {
-    "title": "Mon Portfolio & Études de cas",
+    "title": "Portfolio & Études de cas",
     "subtitle": "Découvrez comment j'accompagne mes clients de l'obscurité à la notoriété.",
     "categories": {
       "wp": "Création WordPress",
@@ -409,7 +410,7 @@
   },
   "blog_page": {
     "hero": {
-      "title": "Ma Veille Technologique",
+      "title": "Veille Technologique",
       "subtitle": "Actualités SEO, conseils WordPress et tendances du Web, mis à jour quotidiennement."
     },
     "loading": "Recherche des dernières actualités en cours...",

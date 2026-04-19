@@ -26,7 +26,7 @@
       "support": "Ondersteuning beschikbaar"
     },
     "services": {
-      "title": "Onze diensten",
+      "title": "Diensten",
       "subtitle": "Uitgebreide weboplossingen for al uw digitale behoeften",
       "web_writing": "Web Copywriting",
       "web_writing_desc": "Geoptimaliseerde content for het web en natuurlijke referencering.",
@@ -85,12 +85,12 @@
   "about": {
     "title": "Over VNP-WEB",
     "subtitle": "Ontdek het verhaal, de expertise en de waarden achter elk webproject.",
-    "role": "Freelance Web & SEO",
+    "role": "Web & SEO Ondernemer",
     "location": "Occitanie, Frankrijk (Wereldwijd)",
     "hours": "Ma-Za: 8u - 20u",
     "degree": "IT & Management",
     "who": {
-      "title": "Wie ik ben",
+      "title": "Wie ben ik?",
       "p1": "Mijn naam is Guillaume Pruvost. Sinds 2014 bouw ik webaanwezigheden die lang meegaan. Achter VNP-WEB schuilt geen massabureau, alleen ik. Gehuisvest in Occitanie (Frankrijk), werk ik wereldwijd in Frans- en Engelstalige gebieden.",
       "p2": "Het begon allemaal met nieuwsgierigheid naar zoekmachines, gecombineerd met een IT- en managementachtergrond. Dat betekent dat ik het web bekeek via techniek en strategie. Deze combinatie bepaalt nog steeds hoe ik werk."
     },
@@ -210,7 +210,7 @@
     "swipe_hint": "👈 Veeg om meer te zien 👉"
   },
   "contact": {
-    "title": "Neem contact op",
+    "title": "Neem contact op met VNP-WEB",
     "subtitle": "Een project op maat? Laten we het bespreken.",
     "formTitle": "Vertel me over uw project",
     "formSubtitle": "Beschrijf uw behoefte. Ik neem snel contact op met een passend voorstel.",
@@ -271,15 +271,16 @@
     "success": "Succesvol ingeschreven!"
   },
   "footer": {
-    "description": "VNP-WEB: Web Copywriting, SEO, GEO, Website Creatie en Vertaling for uw wereldwijde succes.",
+    "description": "VNP-WEB: Meer dan 11 jaar ervaring in SEO, copywriting & WordPress!",
     "quick_links": "Snelle links",
-    "our_services": "Onze Diensten",
+    "our_services": "Diensten",
     "services_list": {
       "web_writing": "Web Copywriting",
       "seo": "SEO & GEO",
       "wordpress": "WordPress",
       "translation": "ENG-FR Vertaling",
-      "smo": "Optimalisatie & SMO"
+      "smo": "Optimalisatie & SMO",
+      "site_creation": "Website Creatie"
     },
     "contact_title": "Contact",
     "rights": "Alle rechten voorbehouden.",
@@ -371,7 +372,7 @@
     "updated": "Laatst bijgewerkt"
   },
   "portfolio": {
-    "title": "Mijn Portfolio & Casestudy's",
+    "title": "Portfolio & Casestudy's",
     "subtitle": "Ontdek hoe ik mijn klanten begeleid van onbekendheid naar succes.",
     "categories": {
       "wp": "WordPress Creatie",
@@ -409,7 +410,7 @@
   },
   "blog_page": {
     "hero": {
-      "title": "Mijn Tech Veille",
+      "title": "Tech Veille ",
       "subtitle": "SEO-nieuws, WordPress-tips en webtrends, dagelijks bijgewerkt."
     },
     "loading": "Zoeken naar het laatste nieuws...",
