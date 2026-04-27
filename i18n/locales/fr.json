@@ -88,7 +88,7 @@
     "subtitle": "Découvrez l'histoire, l'expertise et les valeurs qui animent chaque projet web.",
     "role": "Entrepreneur Web & SEO",
     "location": "Occitanie (Monde entier)",
-    "hours": "Lun-Sam : 8h - 20h",
+    "hours": "Disponible 24h/24 et 7j/7",
     "degree": "BTS SIO & MUC",
     "who": {
       "title": "Qui suis-je ?",
@@ -105,7 +105,7 @@
     "clients": {
       "title": "Tarifs et fonctionnement",
       "p1": "J'accompagne des PME, des artisans et des acteurs internationaux. La distance n'a jamais été un frein à ma productivité. Google Meet, Zoom ou échanges asynchrones : je m'adapte à vos outils.",
-      "p2": "Ce qui ressort de mes collaborations ? La réactivité. Je reste disponible du lundi au samedi. Le web ne dort pas, je fais mon maximum pour rester réactif face à vos urgences.",
+      "p2": "Ce qui ressort de mes collaborations ? La réactivité. Je suis sur le pont 24h/24 et 7j/7. Le web ne dort jamais, je reste donc disponible en permanence pour vos urgences.",
       "p3": "Pas de grille tarifaire fixe ou de packs rigides. Je propose un prix personnalisé selon votre projet. À titre purement indicatif, mon tarif basique pour de la rédaction web sans intégration est de 0,04 € le mot."
     },
     "why": {
@@ -236,8 +236,8 @@
       "phone": "Téléphone",
       "address": "Localisation",
       "hours": "Horaires",
-      "hoursText": "Lun-Sam : 8h - 20h",
-      "hoursWeekend": "Fermé le dimanche",
+      "hoursText": "Ouvert 24h/24 & 7j/7",
+      "hoursWeekend": "Service continu",
       "follow": "Réseaux Sociaux de VNP-WEB",
       "zone_text": "Localisé en Occitanie. Action dans toute la France, en Belgique, Suisse, Luxembourg, Québec et zones francophones/anglophones mondiales."
     }

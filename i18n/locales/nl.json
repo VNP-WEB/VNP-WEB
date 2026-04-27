@@ -88,7 +88,7 @@
     "subtitle": "Ontdek het verhaal, de expertise en de waarden achter elk webproject.",
     "role": "Web & SEO Ondernemer",
     "location": "Occitanie, Frankrijk (Wereldwijd)",
-    "hours": "Ma-Za: 8u - 20u",
+    "hours": "24/7 beschikbaar",
     "degree": "IT & Management",
     "who": {
       "title": "Wie ben ik?",
@@ -105,7 +105,7 @@
     "clients": {
       "title": "Tarieven en werkwijze",
       "p1": "Ik werk met het MKB, ambachtslieden en internationale spelers. Afstand is geen probleem. Zoom of Google Meet: ik pas me aan uw tools aan.",
-      "p2": "Wat het vaakst terugkomt in feedback? Reactiesnelheid. Ik ben bereikbaar van maandag tot zaterdag for uw digitale projecten.",
+      "p2": "Wat het vaakst terugkomt in feedback? Reactiesnelheid. Ik ben 24/7 bereikbaar. Het web slaapt nooit, dus ik blijf constant beschikbaar voor uw digitale projecten.",
       "p3": "Ik hanteer geen vaste prijzen. Ik bied een gepersonaliseerde prijs op basis van uw project. Ter indicatie: mijn basistarief for copywriting zonder integratie is € 0,04 per woord."
     },
     "why": {
@@ -163,7 +163,7 @@
         "f1": "WordPress Installatie", "f2": "Op maat gemaakt thema", "f3": "Responsive design", "f4": "Snelheidsoptimalisatie", "f5": "Inclusief training"
       },
       "integration": {
-        "desc": "HTML/CSS/JS webintegratie van uw mockups en designs.",
+        "desc": "HTML/CSS/JS webintegratie van uw mockups and designs.",
         "f1": "HTML5/CSS3 Integratie", "f2": "JavaScript", "f3": "100% responsive", "f4": "Cross-browser compatibel", "f5": "Schone code"
       },
       "creation-sites": {
@@ -236,8 +236,8 @@
       "phone": "Telefoon",
       "address": "Locatie",
       "hours": "Openingstijden",
-      "hoursText": "Ma-Za: 8u - 20u",
-      "hoursWeekend": "Zondag gesloten",
+      "hoursText": "24/7 geopend",
+      "hoursWeekend": "Continue service",
       "follow": "VNP-WEB Sociale Media",
       "zone_text": "Gevestigd in Occitanie. Actief in Frankrijk, België, Zwitserland en wereldwijd in Frans/Engelstalige gebieden."
     }

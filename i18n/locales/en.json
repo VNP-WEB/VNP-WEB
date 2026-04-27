@@ -88,7 +88,7 @@
     "subtitle": "Discover the story, expertise, and values behind every web project.",
     "role": "Web & SEO Entrepreneur",
     "location": "Occitanie, France (Worldwide)",
-    "hours": "Mon-Sat: 8am - 8pm",
+    "hours": "Available 24/7",
     "degree": "IT & Management Degrees",
     "who": {
       "title": "Who am I?",
@@ -105,7 +105,7 @@
     "clients": {
       "title": "Pricing and Workflow",
       "p1": "I assist SMEs, artisans, and international players. Distance is never a barrier. Google Meet, Zoom, or async emails: I adapt to your tools.",
-      "p2": "What stands out in my collaborations? Responsiveness. I am available Monday to Saturday to handle your digital emergencies.",
+      "p2": "What stands out in my collaborations? Responsiveness. I am available 24/7. The web never sleeps, so I stay permanently available for your digital emergencies.",
       "p3": "No rigid pricing grids. I offer a custom price tailored to your project. Basic rate for web copywriting without integration: €0.04 per word."
     },
     "why": {
@@ -236,8 +236,8 @@
       "phone": "Phone",
       "address": "Location",
       "hours": "Hours",
-      "hoursText": "Mon-Sat: 8am - 8pm",
-      "hoursWeekend": "Closed on Sunday",
+      "hoursText": "Open 24/7",
+      "hoursWeekend": "Continuous service",
       "follow": "VNP-WEB Social Media",
       "zone_text": "Based in Occitanie, France. Operating worldwide across French and English-speaking regions."
     }
