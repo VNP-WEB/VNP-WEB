@@ -3,7 +3,7 @@
     "home": "Startpagina",
     "services": "Diensten",
     "portfolio": "Portfolio",
-    "blog": "Blog",
+    "blog": "Nieuws",
     "planning": "Planning",
     "about": "Over ons",
     "contact": "Contact",
@@ -92,7 +92,7 @@
     "who": {
       "title": "Wie ben ik?",
       "p1": "Mijn naam is Guillaume Pruvost. Sinds 2014 bouw ik webaanwezigheden die lang meegaan. Achter VNP-WEB schuilt geen massabureau, alleen ik. Gehuisvest in Occitanie (Frankrijk), werk ik wereldwijd in Frans- en Engelstalige gebieden.",
-      "p2": "Het begon allemaal met nieuwsgierigheid naar zoekmachines, gecombineerd met een IT- en managementachtergrond. Dat betekent dat ik het web bekeek via techniek en strategie. Deze combinatie bepaalt nog steeds hoe ik werk."
+      "p2": "Het begon allemaal met nieuwsgierigheid naar zoekmachines, gecombineerd met een IT- en managementachtergrond. Dat betekent dat ik het web bekeek via techniek en strategie."
     },
     "what": {
       "title": "Wat ik concreet doe",
@@ -125,7 +125,7 @@
     "creation-sites": "Website Creatie"
   },
   "services": {
-    "title": "Onze Diensten",
+    "title": "Diensten",
     "subtitle": "Volledige en professionele weboplossingen om aan al uw digitale behoeften te voldoen",
     "mainOffers": "Onze belangrijkste aanbiedingen",
     "mainOffersSubtitle": "Kies de oplossing die het beste bij uw behoeften past",
@@ -410,8 +410,8 @@
   },
   "blog_page": {
     "hero": {
-      "title": "Tech Veille ",
-      "subtitle": "SEO-nieuws, WordPress-tips en webtrends, dagelijks bijgewerkt."
+      "title": "Nieuws",
+      "subtitle": "SEO-GEO Nieuws, SEO en technische website-optimalisatie."
     },
     "loading": "Zoeken naar het laatste nieuws...",
     "featured": "Uitgelicht",

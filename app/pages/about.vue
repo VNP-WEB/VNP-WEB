@@ -101,14 +101,16 @@
 </template>
 
 <script setup>
-import { useLocalePath } from '#i18n'
+import { useI18n } from 'vue-i18n'
 
 const localePath = useLocalePath()
+const { t } = useI18n()
 
+// SEO dynamique : on utilise les traductions et on a retiré le mot "freelance" !
 useHead({
-  title: 'À propos - VNP-WEB',
+  title: `${t('about.title')} - VNP-WEB`,
   meta: [
-    { name: 'description', content: 'Découvrez Guillaume Pruvost, freelance expert en création de sites web et SEO derrière VNP-WEB.' }
+    { name: 'description', content: t('about.subtitle') }
   ]
 })
 </script>

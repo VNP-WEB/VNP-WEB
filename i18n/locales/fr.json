@@ -3,7 +3,7 @@
     "home": "Accueil",
     "services": "Services",
     "portfolio": "Portfolio",
-    "blog": "Blog",
+    "blog": "Actualités",
     "planning": "Planning",
     "about": "À propos",
     "contact": "Contact",
@@ -26,7 +26,7 @@
       "support": "Support disponible"
     },
     "services": {
-      "title": "Nos services",
+      "title": "Services",
       "subtitle": "Des solutions web complètes pour répondre à tous vos besoins digitaux",
       "web_writing": "Rédaction web",
       "web_writing_desc": "Contenus optimisés pour le web et le référencement naturel.",
@@ -115,7 +115,7 @@
   },
   "serviceNames": {
     "redaction-web": "Rédaction web",
-    "seo": "SEO",
+    "seo": "SEO & GEO",
     "geo": "GEO",
     "integration": "Intégration",
     "wordpress": "WordPress",
@@ -410,8 +410,8 @@
   },
   "blog_page": {
     "hero": {
-      "title": "Veille Technologique",
-      "subtitle": "Actualités SEO, conseils WordPress et tendances du Web, mis à jour quotidiennement."
+      "title": "Actualités",
+      "subtitle": "News SEO-GEO, Optimisation SEO et technique du site web."
     },
     "loading": "Recherche des dernières actualités en cours...",
     "featured": "À la une",

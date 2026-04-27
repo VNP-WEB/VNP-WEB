@@ -3,7 +3,7 @@
     "home": "Home",
     "services": "Services",
     "portfolio": "Portfolio",
-    "blog": "Blog",
+    "blog": "News",
     "planning": "Planning",
     "about": "About",
     "contact": "Contact",
@@ -26,7 +26,7 @@
       "support": "Support available"
     },
     "services": {
-      "title": "Our services",
+      "title": "Services",
       "subtitle": "Comprehensive web solutions for all your digital needs",
       "web_writing": "Web Copywriting",
       "web_writing_desc": "Optimized content for the web and natural referencing.",
@@ -62,10 +62,10 @@
       "subtitle": "Customer satisfaction is our priority",
       "t1_name": "Mathieu R.",
       "t1_role": "SME Manager",
-      "t1_quote": "\"We were looking for someone reliable to rebuild our site and work on our SEO. Guillaume took the time to truly understand our business. First page on our target queries. Very professional.\"",
+      "t1_quote": "\"We were looking for someone reliable to rebuild our site and work on our SEO. Guillaume took the time to truly understand our business. First page on our target queries.\"",
       "t2_name": "Sandrine L.",
       "t2_role": "Communication Manager",
-      "t2_quote": "\"I needed SEO-optimized articles. Guillaume delivered high-quality, well-structured texts. The deadline was met, communication was smooth. I recommend him.\"",
+      "t2_quote": "\"I needed SEO-optimized articles. Guillaume delivered high-quality, well-structured texts. The deadline was met, communication was smooth.\"",
       "t3_name": "Théo M.",
       "t3_role": "Freelancer",
       "t3_quote": "\"Guillaume created my WordPress site from A to Z. Great advice on structure and content. I started receiving requests quickly.\"",
@@ -92,20 +92,20 @@
     "who": {
       "title": "Who am I?",
       "p1": "My name is Guillaume Pruvost. Since 2014, I've been building web presences that last. VNP-WEB is not a factory agency, it's my freelance business. Located in Occitanie, France, I operate throughout France, Belgium, Switzerland, Luxembourg, Quebec, and all French and English-speaking areas worldwide.",
-      "p2": "My background? A natural curiosity for search algorithms, backed by a dual degree in IT (BTS SIO) and management (BTS MUC). I see the web from two angles: pure tech and business strategy. This defines my current method."
+      "p2": "My background? A natural curiosity for search algorithms, backed by a dual degree in IT (BTS SIO) and management (BTS MUC). I see the web from two angles: pure tech and business strategy."
     },
     "what": {
       "title": "What I actually do",
       "seo": "My core business is web copywriting, SEO, and GEO. Every day, I write and optimize content on complex topics to drive qualified traffic to your pages.",
       "support": "I also handle content optimization, web integration, and SMO (Social Media Optimization). I connect your entire digital ecosystem.",
-      "wp": "I am a WordPress and website creation specialist. Redesigns, responsive design, mobile optimization: I master the technical chain. If your project needs a different platform, I adapt.",
+      "wp": "I am a WordPress and website creation specialist. Redesigns, responsive design, mobile optimization. If your project needs a different platform, I adapt.",
       "translation": "Finally, I offer ENG-FR translation services. Perfect for businesses looking to conquer French or English markets with impactful text."
     },
     "clients": {
       "title": "Pricing and Workflow",
       "p1": "I assist SMEs, artisans, and international players. Distance is never a barrier. Google Meet, Zoom, or async emails: I adapt to your tools.",
       "p2": "What stands out in my collaborations? Responsiveness. I am available Monday to Saturday to handle your digital emergencies.",
-      "p3": "No rigid pricing grids. I offer a custom price tailored to your project. As a pure reference, my basic rate for web copywriting without integration is €0.04 per word."
+      "p3": "No rigid pricing grids. I offer a custom price tailored to your project. Basic rate for web copywriting without integration: €0.04 per word."
     },
     "why": {
       "title": "Why VNP-WEB?",
@@ -410,8 +410,8 @@
   },
   "blog_page": {
     "hero": {
-      "title": "Tech Watch",
-      "subtitle": "SEO news, WordPress tips, and Web trends, updated daily."
+      "title": "News",
+      "subtitle": "SEO-GEO News, SEO and technical website optimization."
     },
     "loading": "Searching for the latest news...",
     "featured": "Featured",
