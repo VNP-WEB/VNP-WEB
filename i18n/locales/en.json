@@ -13,11 +13,11 @@
   },
   "home": {
     "hero": {
-      "title_start": "Let's build your ",
-      "title_highlight": "perfect website",
-      "subtitle": "High-performance, modern, and optimized web solutions to grow your business.",
+      "title_start": "Give your business the ",
+      "title_highlight": "website it finally deserves",
+      "subtitle": "No more invisible or sluggish sites. A real client-attracting machine is set up, designed specifically for your growth.",
       "btn": "Get a quote →",
-      "btn_portfolio": "View our portfolio"
+      "btn_portfolio": "See the work"
     },
     "stats": {
       "projects": "Projects completed",
@@ -28,29 +28,29 @@
     },
     "services": {
       "title": "Services",
-      "subtitle": "Comprehensive web solutions for all your digital needs",
+      "subtitle": "Everything you need to exist and stand out on the internet.",
       "web_writing": "Web Copywriting",
-      "web_writing_desc": "Optimized content for the web and natural referencing.",
+      "web_writing_desc": "Texts designed for your readers, but also tailored to please Google.",
       "seo": "SEO & GEO",
-      "seo_desc": "Search engine optimization and local/global visibility.",
+      "seo_desc": "Your pages move up in the search results. No more page 3.",
       "wp": "WordPress",
-      "wp_desc": "Creation and customization of professional WordPress sites.",
-      "btn": "Discover all our services →"
+      "wp_desc": "Custom sites, easy to manage, and that don't lag.",
+      "btn": "Discover all services →"
     },
     "features": {
-      "title": "Our features",
-      "subtitle": "Innovative tools to improve your user experience",
+      "title": "Features",
+      "subtitle": "That little extra something that changes everything.",
       "booking": "Online Booking",
-      "booking_desc": "Book your consultation directly from our site with our integrated scheduling system.",
+      "booking_desc": "Book a slot in two clicks via the integrated calendar. No need for ten back-and-forth emails.",
       "chat": "24/7 AI Chat",
-      "chat_desc": "Our intelligent virtual assistant answers your questions at any time.",
+      "chat_desc": "An urgent question at 2 AM? The intelligent virtual assistant answers your questions anytime.",
       "strategy": "Custom Strategy",
-      "strategy_desc": "Every project is unique. Together, we define an action plan perfectly tailored to your goals.",
+      "strategy_desc": "Every project is unique. An action plan is defined together, perfectly tailored to your goals.",
       "learn_more": "Learn more →"
     },
     "why_us": {
       "title": "Why choose VNP-WEB?",
-      "subtitle": "Recognized expertise serving your digital success",
+      "subtitle": "Recognized expertise serving your digital success.",
       "team": "Single point of contact",
       "team_desc": "Guillaume handles your project from start to finish. No middlemen, just dedicated web and SEO expertise.",
       "quality": "Quality guaranteed",
@@ -59,27 +59,27 @@
       "speed_desc": "Meeting deadlines and transparent communication."
     },
     "testimonials": {
-      "title": "What our clients say",
-      "subtitle": "Customer satisfaction is our priority",
+      "title": "What clients say",
+      "subtitle": "Client satisfaction is the priority.",
       "t1_name": "Mathieu R.",
       "t1_role": "SME Manager",
-      "t1_quote": "\"We were looking for someone reliable to rebuild our site and work on our SEO. Guillaume took the time to truly understand our business. First page on our target queries.\"",
+      "t1_quote": "\"Honestly, finding a good SEO profile is a jungle. Guillaume immediately understood our market. Result: we dominate the first page. Solid and responsive.\"",
       "t2_name": "Sandrine L.",
       "t2_role": "Communication Manager",
-      "t2_quote": "\"I needed SEO-optimized articles. Guillaume delivered high-quality, well-structured texts. The deadline was met, communication was smooth.\"",
+      "t2_quote": "\"Texts delivered on time. The SEO structure is flawless and it reads really well. I'll definitely use him again for the next steps.\"",
       "t3_name": "Théo M.",
       "t3_role": "Freelancer",
-      "t3_quote": "\"Guillaume created my WordPress site from A to Z. Great advice on structure and content. I started receiving requests quickly.\"",
+      "t3_quote": "\"He built my showcase site from A to Z. What I liked most? His honest advice. He doesn't try to sell just to sell. And the leads are coming in.\"",
       "t4_name": "Céline D.",
       "t4_role": "E-commerce Owner",
-      "t4_quote": "\"Very comprehensive SEO audit. I appreciated getting a real roadmap rather than just a list of problems without solutions.\"",
+      "t4_quote": "\"Very comprehensive SEO audit. I appreciated that he gave me a real roadmap rather than just a list of problems without solutions.\"",
       "t5_name": "Jordan F.",
       "t5_role": "Tech Blogger",
-      "t5_quote": "\"Guillaume has been writing and optimizing content for my blog for two years. Organic traffic has grown steadily.\""
+      "t5_quote": "\"We've been working together on my blog for two years. Organic traffic just keeps climbing. A real gem.\""
     },
     "cta": {
       "title": "Ready to launch your project?",
-      "subtitle": "Contact us today and let's bring your ideas to life together",
+      "subtitle": "Get in touch today and let's bring your ideas to life",
       "btn": "Get a free quote →"
     }
   },
@@ -92,26 +92,26 @@
     "degree": "IT & Management Degrees",
     "who": {
       "title": "Who am I?",
-      "p1": "My name is Guillaume Pruvost. Since 2014, I've been building web presences that last. VNP-WEB is not a factory agency, it's my freelance business. Located in Occitanie, France, I operate throughout France, Belgium, Switzerland, Luxembourg, Quebec, and all French and English-speaking areas worldwide.",
-      "p2": "My background? A natural curiosity for search algorithms, backed by a dual degree in IT (BTS SIO) and management (BTS MUC). I see the web from two angles: pure tech and business strategy."
+      "p1": "I'm Guillaume Pruvost. I've been building web presences that last since 2014. Forget the factory agency where you're just a file number: VNP-WEB is a solo freelance business. Based in Occitanie, France, the operation spans across France, Belgium, Switzerland, Luxembourg, Quebec, and anywhere in the world.",
+      "p2": "The background? A natural curiosity for search algorithms, backed by a dual degree in IT (BTS SIO) and management (BTS MUC). It's not just about coding: the focus is on how your site is going to make you money."
     },
     "what": {
       "title": "What I actually do",
-      "seo": "My core business is web copywriting, SEO, and GEO. Every day, I write and optimize content on complex topics to drive qualified traffic to your pages.",
-      "support": "I also handle content optimization, web integration, and SMO (Social Media Optimization). I connect your entire digital ecosystem.",
-      "wp": "I am a WordPress and website creation specialist. Redesigns, responsive design, mobile optimization. If your project needs a different platform, I adapt.",
-      "translation": "Finally, I offer ENG-FR translation services. Perfect for businesses looking to conquer French or English markets with impactful text."
+      "seo": "The core business revolves around SEO, GEO optimization, and writing. Content is written and optimized on complex topics to bring ultra-qualified traffic to your site.",
+      "support": "Cleaning up what already exists, pure web integration, and SMO (Social Media Optimization) are also managed. Your brand needs to be solid across all networks, connecting your entire digital ecosystem.",
+      "wp": "Also a WordPress specialist: redesigns, responsive design, mobile optimization. Everything is handled, from the first line of code to going live. If your project needs a different platform, VNP-WEB adapts.",
+      "translation": "Finally, an ENG-FR translation service is offered. Ideal for tackling new markets without ruining your message."
     },
     "clients": {
       "title": "Pricing and Workflow",
-      "p1": "I assist SMEs, artisans, and international players. Distance is never a barrier. Google Meet, Zoom, or async emails: I adapt to your tools.",
-      "p2": "What stands out in my collaborations? Responsiveness. I am available 24/7. The web never sleeps, so I stay permanently available for your digital emergencies.",
-      "p3": "No rigid pricing grids. I offer a custom price tailored to your project. Basic rate for web copywriting without integration: €0.04 per word."
+      "p1": "VNP-WEB assists SMEs, artisans, and international players. Distance has never been an obstacle. Communication happens via Meet, Zoom, or async emails.",
+      "p2": "What stands out in the collaborations? Responsiveness. Available 24/7. The web never sleeps, so availability remains permanent for your digital emergencies.",
+      "p3": "No rigid pricing grids. A custom price is offered tailored to your project. As a pure indication, the basic rate for web copywriting without integration is €0.04 per word."
     },
     "why": {
       "title": "Why VNP-WEB?",
-      "p1": "VNP stands for Visibility, Notoriety, Popularity. A beautiful website is useless if it remains invisible. My job is to expose it to the right people.",
-      "p2": "Artificial Intelligence is changing our industry. I focus on 100% human, authentic, and straightforward content. Adaptation is the key to web longevity."
+      "p1": "VNP stands for Visibility, Notoriety, Popularity. A gorgeous website is useless if it remains invisible. The job is to put you in front of the right people.",
+      "p2": "Faced with AI churning out texts endlessly, the priority is 100% human, authentic content with character. Adaptation is the key to web longevity."
     }
   },
   "serviceNames": {
@@ -127,17 +127,17 @@
   },
   "services": {
     "title": "Services",
-    "subtitle": "Complete and professional web solutions to meet all your digital needs",
-    "mainOffers": "Our main offers",
+    "subtitle": "Complete web solutions to meet all your digital needs",
+    "mainOffers": "Main offers",
     "mainOffersSubtitle": "Choose the solution that best fits your needs",
     "popular": "Popular",
     "bookConsultation": "Choose this service",
     "additionalServices": "Additional services",
     "additionalServicesSubtitle": "Additional services to optimize your online presence",
-    "workProcess": "Our work process",
+    "workProcess": "Work process",
     "workProcessSubtitle": "A proven methodology to guarantee the success of your project",
-    "question": "A question about our services?",
-    "questionSubtitle": "Our team is at your disposal to discuss your project",
+    "question": "A question about the services?",
+    "questionSubtitle": "VNP-WEB is at your disposal to discuss your project",
     "modal": {
       "title": "How to proceed?",
       "subtitle_part1": "For the",
@@ -163,7 +163,7 @@
         "f1": "WordPress Installation", "f2": "Custom theme", "f3": "Responsive design", "f4": "Speed optimization", "f5": "Training included"
       },
       "integration": {
-        "desc": "HTML/CSS/JS web integration of your mockups and designs.",
+        "desc": "HTML/CSS/JS web integration of mockups and designs.",
         "f1": "HTML5/CSS3 Integration", "f2": "JavaScript", "f3": "100% responsive", "f4": "Cross-browser compatible", "f5": "Clean code"
       },
       "creation-sites": {
@@ -182,7 +182,7 @@
       "s4": { "icon": "⚡", "title": "Content Optimization", "desc": "Enhance existing texts to satisfy Google's algorithms." }
     },
     "process": {
-      "p1": { "step": "01", "title": "Analysis", "desc": "We study your project in detail." },
+      "p1": { "step": "01", "title": "Analysis", "desc": "The project is studied in detail." },
       "p2": { "step": "02", "title": "Design", "desc": "Creation and validation of the strategy." },
       "p3": { "step": "03", "title": "Production", "desc": "Copywriting, SEO, and development." },
       "p4": { "step": "04", "title": "Validation", "desc": "Testing on all devices." },
@@ -214,7 +214,7 @@
     "title": "Contact VNP-WEB",
     "subtitle": "A question? A custom project? Let's discuss it.",
     "formTitle": "Tell me about your project",
-    "formSubtitle": "Describe your needs. I'll get back to you quickly with a tailored proposal.",
+    "formSubtitle": "Describe your needs. A quick reply will follow with a tailored proposal.",
     "location": "Service Areas",
     "subjectPrefix": "Quote request:",
     "form": {
@@ -227,7 +227,7 @@
       "messagePlaceholder": "Detail your goals...",
       "send": "Send message",
       "sending": "Sending...",
-      "success": "Message sent successfully. I will reply within 24h.",
+      "success": "Message sent successfully. A reply will be provided within 24h.",
       "error": "An error occurred while sending."
     },
     "info": {
@@ -247,25 +247,25 @@
     "status": "Online",
     "placeholder": "Type your message...",
     "welcome_msg": "Hello! I am the VNP-WEB assistant. How can I help you today?",
-    "fallback_msg": "I am an automated assistant. Could you please choose one of the options below or contact us?",
+    "fallback_msg": "I am an automated assistant. Could you please choose one of the options below or contact VNP-WEB?",
     "options": {
       "quote": "Get a quote",
-      "services": "Discover your services",
+      "services": "Discover the services",
       "other": "Other question"
     },
     "answers": {
-      "quote": "Excellent choice! You can detail your project directly on our contact page:",
-      "services": "We are experts in website creation (WordPress, custom), SEO, and web copywriting. Discover our expertise here:",
-      "other": "For any specific questions, our human team is here for you! Email us at sio.pruvost{'@'}gmail.com or use our form:"
+      "quote": "Excellent choice! You can detail your project directly on the contact page:",
+      "services": "VNP-WEB is an expert in website creation (WordPress, custom), SEO, and web copywriting. Discover the expertise here:",
+      "other": "For any specific questions, VNP-WEB is here for you! Email sio.pruvost{'@'}gmail.com or use the form:"
     },
     "links": {
       "contact": "Go to Contact page →",
-      "services": "See our services →"
+      "services": "See the services →"
     }
   },
   "newsletter": {
-    "title": "Subscribe to our newsletter",
-    "subtitle": "Get our latest news, offers, and web tips directly in your inbox.",
+    "title": "Subscribe to the newsletter",
+    "subtitle": "Get the latest news, offers, and web tips directly in your inbox.",
     "placeholder": "Your email address...",
     "button": "Subscribe",
     "loading": "Subscribing...",
@@ -332,8 +332,8 @@
         "content": "The collected data is used to:",
         "item1": "Respond to your contact requests",
         "item2": "Manage your service bookings",
-        "item3": "Send you information about our services",
-        "item4": "Improve our services and your user experience"
+        "item3": "Send you information about the services",
+        "item4": "Improve the services and your user experience"
       },
       "rights": {
         "title": "Your Rights",
@@ -374,7 +374,7 @@
   },
   "portfolio": {
     "title": "Portfolio & Case Studies",
-    "subtitle": "Discover how I guide my clients from obscurity to notoriety.",
+    "subtitle": "A glimpse of what happens when projects come to life.",
     "categories": {
       "wp": "WordPress Creation",
       "seo": "SEO Audit",
@@ -405,8 +405,8 @@
     },
     "cta": {
       "title": "Have a similar project in mind?",
-      "subtitle": "Let's discuss your goals and see how I can help.",
-      "btn": "Contact me"
+      "subtitle": "Let's discuss your goals and see how VNP-WEB can help.",
+      "btn": "Get in touch"
     }
   },
   "blog_page": {

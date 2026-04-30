@@ -17,7 +17,7 @@
       "title_highlight": "site web parfait",
       "subtitle": "Des solutions web performantes, modernes et optimisées pour faire grandir votre entreprise.",
       "btn": "Demander un devis →",
-      "btn_portfolio": "Voir nos réalisations"
+      "btn_portfolio": "Voir les réalisations"
     },
     "stats": {
       "projects": "Projets réalisés",
@@ -35,17 +35,17 @@
       "seo_desc": "Optimisation pour les moteurs de recherche et visibilité locale/globale.",
       "wp": "WordPress",
       "wp_desc": "Création et personnalisation de sites WordPress professionnels.",
-      "btn": "Découvrir tous nos services →"
+      "btn": "Découvrir tous les services →"
     },
     "features": {
-      "title": "Nos fonctionnalités",
+      "title": "Les fonctionnalités",
       "subtitle": "Des outils innovants pour améliorer votre expérience utilisateur",
       "booking": "Réservation en ligne",
-      "booking_desc": "Réservez votre consultation directement depuis notre site avec notre système de planning intégré.",
+      "booking_desc": "Réservez votre consultation directement depuis le site avec le système de planning intégré.",
       "chat": "Chat IA 24/7",
-      "chat_desc": "Notre assistant virtuel intelligent répond à vos questions à tout moment.",
+      "chat_desc": "L'assistant virtuel intelligent répond à vos questions à tout moment.",
       "strategy": "Stratégie sur-mesure",
-      "strategy_desc": "Chaque projet est unique. Nous définissons ensemble un plan d'action parfaitement adapté à vos objectifs.",
+      "strategy_desc": "Chaque projet est unique. Un plan d'action parfaitement adapté à vos objectifs est défini avec vous.",
       "learn_more": "En savoir plus →"
     },
     "why_us": {
@@ -59,8 +59,8 @@
       "speed_desc": "Respect des délais et communication transparente."
     },
     "testimonials": {
-      "title": "Ce que disent nos clients",
-      "subtitle": "La satisfaction de nos clients est notre priorité",
+      "title": "Ce que disent les clients",
+      "subtitle": "La satisfaction des clients est la priorité",
       "t1_name": "Mathieu R.",
       "t1_role": "Dirigeant PME",
       "t1_quote": "« On cherchait quelqu'un de fiable pour refaire notre site et travailler notre référencement. Guillaume a pris le temps de bien comprendre notre activité. Le résultat est là : première page sur nos requêtes cibles. Très pro et disponible. »",
@@ -79,7 +79,7 @@
     },
     "cta": {
       "title": "Prêt à lancer votre projet ?",
-      "subtitle": "Contactez-nous dès aujourd'hui et donnons vie à vos idées ensemble",
+      "subtitle": "Prenez contact dès aujourd'hui et donnons vie à vos idées",
       "btn": "Demander un devis gratuit →"
     }
   },
@@ -93,25 +93,25 @@
     "who": {
       "title": "Qui suis-je ?",
       "p1": "Je m'appelle Guillaume Pruvost. Depuis 2014, je construis des présences web durables. VNP-WEB n'est pas une agence usine, c'est mon entreprise freelance. Localisé en Occitanie, j'agis dans toute la France, en Belgique, en Suisse, au Luxembourg, au Québec et dans toutes les zones francophones et anglophones du monde.",
-      "p2": "Mon parcours ? Une curiosité naturelle pour les algorithmes de recherche, complétée par un double bagage académique en informatique (BTS SIO) et en management (BTS MUC), après un Bac STG Mercatique. Je vois le web sous deux angles : la technique pure et la stratégie business. Ce combo définit ma méthode actuelle."
+      "p2": "Mon parcours ? Une curiosité naturelle pour les algorithmes de recherche, complétée par un double bagage académique en informatique (BTS SIO) et en management (BTS MUC), après un Bac STG Mercatique. Je vois le web sous deux angles : la technique pure et la stratégie business. Ce combo définit la méthode actuelle."
     },
     "what": {
       "title": "Ce que je fais concrètement",
-      "seo": "Mon cœur de métier regroupe la rédaction web, le SEO et le GEO. Chaque jour, j'écris et j'optimise des contenus sur des thématiques complexes. L'objectif reste simple : faire venir du trafic qualifié sur vos pages sans jamais sacrifier la qualité de lecture.",
-      "support": "Je gère aussi l'optimisation de contenu existant, l'intégration web et le SMO (Social Media Optimization). Votre site doit être performant, mais il doit aussi rayonner sur les réseaux sociaux. Je relie l'ensemble de votre écosystème numérique.",
-      "wp": "Je suis également spécialiste WordPress et création de sites. Refonte, design responsive, optimisation mobile : je maîtrise la chaîne technique de A à Z. Si votre projet nécessite une plateforme différente, je m'adapte.",
-      "translation": "Enfin, je propose un service de traduction ENG-FR. Idéal pour les entreprises qui souhaitent conquérir des marchés anglophones ou francophones avec un texte fluide et percutant."
+      "seo": "Le cœur de métier regroupe la rédaction web, le SEO et le GEO. Chaque jour, des contenus sont écrits et optimisés sur des thématiques complexes. L'objectif reste simple : faire venir du trafic qualifié sur vos pages sans jamais sacrifier la qualité de lecture.",
+      "support": "L'optimisation de contenu existant, l'intégration web et le SMO (Social Media Optimization) font également partie de l'expertise. Le site doit être performant, mais il doit aussi rayonner sur les réseaux sociaux. L'ensemble de votre écosystème numérique est relié.",
+      "wp": "Également spécialiste WordPress et création de sites. Refonte, design responsive, optimisation mobile : la chaîne technique est maîtrisée de A à Z. Si votre projet nécessite une plateforme différente, VNP-WEB s'adapte.",
+      "translation": "Enfin, un service de traduction ENG-FR est proposé. Idéal pour les entreprises qui souhaitent conquérir des marchés anglophones ou francophones avec un texte fluide et percutant."
     },
     "clients": {
       "title": "Tarifs et fonctionnement",
-      "p1": "J'accompagne des PME, des artisans et des acteurs internationaux. La distance n'a jamais été un frein à ma productivité. Google Meet, Zoom ou échanges asynchrones : je m'adapte à vos outils.",
-      "p2": "Ce qui ressort de mes collaborations ? La réactivité. Je suis sur le pont 24h/24 et 7j/7. Le web ne dort jamais, je reste donc disponible en permanence pour vos urgences.",
-      "p3": "Pas de grille tarifaire fixe ou de packs rigides. Je propose un prix personnalisé selon votre projet. À titre purement indicatif, mon tarif basique pour de la rédaction web sans intégration est de 0,04 € le mot."
+      "p1": "VNP-WEB accompagne des PME, des artisans et des acteurs internationaux. La distance n'est pas un frein à la productivité. Google Meet, Zoom ou échanges asynchrones : l'adaptation à vos outils est totale.",
+      "p2": "Ce qui ressort des collaborations ? La réactivité. Une disponibilité 24h/24 et 7j/7. Le web ne dort pas, tout est fait pour rester réactif face à vos urgences.",
+      "p3": "Pas de grille tarifaire fixe ou de packs rigides. Un prix personnalisé est proposé selon votre projet. À titre purement indicatif, le tarif basique pour de la rédaction web sans intégration est de 0,04 € le mot."
     },
     "why": {
       "title": "Pourquoi VNP-WEB ?",
-      "p1": "VNP signifie Visibilité, Notoriété, Popularité. Un site web magnifique ne sert à rien s'il reste invisible. Mon travail consiste à l'exposer aux bonnes personnes, au bon moment.",
-      "p2": "L'intelligence artificielle bouleverse notre métier. Face à cela, je privilégie le contenu 100% humain, authentique et sans détours. L'adaptation est la clé de la longévité sur le web."
+      "p1": "VNP signifie Visibilité, Notoriété, Popularité. Un site web magnifique ne sert à rien s'il reste invisible. Le travail consiste à l'exposer aux bonnes personnes, au bon moment.",
+      "p2": "L'intelligence artificielle bouleverse notre métier. Face à cela, le contenu 100% humain, authentique et sans détours est privilégié. L'adaptation est la clé de la longévité sur le web."
     }
   },
   "serviceNames": {
@@ -128,16 +128,16 @@
   "services": {
     "title": "Services",
     "subtitle": "Des solutions web complètes pour répondre à tous vos besoins digitaux",
-    "mainOffers": "Nos offres principales",
+    "mainOffers": "Offres principales",
     "mainOffersSubtitle": "Choisissez la solution qui correspond le mieux à vos besoins",
     "popular": "Populaire",
     "bookConsultation": "Choisir ce service",
     "additionalServices": "Services complémentaires",
     "additionalServicesSubtitle": "Des prestations additionnelles pour optimiser votre présence en ligne",
-    "workProcess": "Notre processus de travail",
+    "workProcess": "Processus de travail",
     "workProcessSubtitle": "Une méthodologie éprouvée pour garantir le succès de votre projet",
-    "question": "Une question sur nos services ?",
-    "questionSubtitle": "Notre équipe est à votre disposition pour discuter de votre projet",
+    "question": "Une question sur les services ?",
+    "questionSubtitle": "VNP-WEB est à votre disposition pour discuter de votre projet",
     "modal": {
       "title": "Comment procéder ?",
       "subtitle_part1": "Pour le service",
@@ -214,7 +214,7 @@
     "title": "Contactez VNP-WEB",
     "subtitle": "Une question ? Un projet sur mesure ? Discutons-en.",
     "formTitle": "Parlez-moi de votre projet",
-    "formSubtitle": "Décrivez votre besoin. Je vous recontacte rapidement avec une proposition adaptée.",
+    "formSubtitle": "Décrivez votre besoin. Un retour rapide sera fait avec une proposition adaptée.",
     "location": "Zones d'intervention",
     "subjectPrefix": "Demande de devis :",
     "form": {
@@ -227,7 +227,7 @@
       "messagePlaceholder": "Détaillez vos objectifs...",
       "send": "Envoyer le message",
       "sending": "Envoi en cours...",
-      "success": "Message envoyé avec succès. Je vous réponds sous 24h.",
+      "success": "Message envoyé avec succès. Une réponse sera apportée sous 24h.",
       "error": "Une erreur s'est produite lors de l'envoi."
     },
     "info": {
@@ -247,25 +247,25 @@
     "status": "En ligne",
     "placeholder": "Tapez votre message...",
     "welcome_msg": "Bonjour ! Je suis l'assistant de VNP-WEB. Que puis-je faire pour vous ?",
-    "fallback_msg": "Je suis un assistant automatisé. Pourriez-vous choisir l'une des options ci-dessous ou nous contacter ?",
+    "fallback_msg": "Je suis un assistant automatisé. Pourriez-vous choisir l'une des options ci-dessous ou contacter VNP-WEB ?",
     "options": {
       "quote": "Demander un devis",
-      "services": "Découvrir vos services",
+      "services": "Découvrir les services",
       "other": "Autre question"
     },
     "answers": {
-      "quote": "Excellent choix ! Vous pouvez nous détailler votre projet directement sur notre page de contact :",
-      "services": "Nous sommes experts en création de sites (WordPress, sur-mesure), en SEO et en rédaction web. Découvrez notre expertise ici :",
-      "other": "Pour toute question spécifique, notre équipe humaine est là pour vous ! Écrivez-nous à sio.pruvost{'@'}gmail.com ou utilisez notre formulaire :"
+      "quote": "Excellent choix ! Vous pouvez détailler votre projet directement sur la page de contact :",
+      "services": "VNP-WEB est expert en création de sites (WordPress, sur-mesure), en SEO et en rédaction web. Découvrez l'expertise ici :",
+      "other": "Pour toute question spécifique, VNP-WEB est là pour vous ! Écrivez à sio.pruvost{'@'}gmail.com ou utilisez le formulaire :"
     },
     "links": {
       "contact": "Aller à la page Contact →",
-      "services": "Voir nos services →"
+      "services": "Voir les services →"
     }
   },
   "newsletter": {
-    "title": "Abonnez-vous à notre newsletter",
-    "subtitle": "Recevez nos dernières actualités, offres et conseils web directement dans votre boîte mail.",
+    "title": "Abonnez-vous à la newsletter",
+    "subtitle": "Recevez les dernières actualités, offres et conseils web directement dans votre boîte mail.",
     "placeholder": "Votre adresse email...",
     "button": "S'abonner",
     "loading": "Inscription...",
@@ -332,8 +332,8 @@
         "content": "Les données collectées sont utilisées pour :",
         "item1": "Répondre à vos demandes de contact",
         "item2": "Gérer vos réservations de services",
-        "item3": "Vous envoyer des informations sur nos services",
-        "item4": "Améliorer nos services et votre expérience utilisateur"
+        "item3": "Vous envoyer des informations sur les services",
+        "item4": "Améliorer les services et votre expérience utilisateur"
       },
       "rights": {
         "title": "Vos droits",
@@ -374,7 +374,7 @@
   },
   "portfolio": {
     "title": "Portfolio & Études de cas",
-    "subtitle": "Découvrez comment j'accompagne mes clients de l'obscurité à la notoriété.",
+    "subtitle": "Un aperçu de ce qui se passe quand les projets prennent vie.",
     "categories": {
       "wp": "Création WordPress",
       "seo": "Audit SEO",
@@ -405,8 +405,8 @@
     },
     "cta": {
       "title": "Un projet similaire en tête ?",
-      "subtitle": "Discutons de vos objectifs et voyons comment je peux vous aider.",
-      "btn": "Me contacter"
+      "subtitle": "Discutons de vos objectifs et voyons comment VNP-WEB peut vous aider.",
+      "btn": "Prendre contact"
     }
   },
   "blog_page": {
