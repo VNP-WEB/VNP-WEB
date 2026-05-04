@@ -1,16 +1,18 @@
 <template>
   <div class="chatbot-container">
     
+    <!-- Bouton bulle classique -->
     <button 
       v-if="!isChatOpen" 
       class="chat-bubble-button"
-      @click="openChat"
+      @click="isChatOpen = true"
     >
       <svg class="message-icon" viewBox="0 0 24 24" fill="currentColor">
         <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
       </svg>
     </button>
 
+    <!-- Fenêtre du chat -->
     <div 
       v-if="isChatOpen" 
       class="chat-window"
@@ -91,12 +93,11 @@
 </template>
 
 <script setup>
-import { ref, nextTick } from 'vue';
+import { ref, nextTick, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
 
-// ICI : On utilise useState pour écouter le même état que la page d'accueil
 const isChatOpen = useState('isChatOpen', () => false);
 const newMessage = ref('');
 const chatBodyRef = ref(null);
@@ -120,9 +121,9 @@ const defaultOptions = [
   { textKey: 'chatbot.options.other', action: 'other' }
 ];
 
-const openChat = () => {
-  isChatOpen.value = true;
-  if (messages.value.length === 0) {
+// LA CORRECTION EST ICI : On surveille l'ouverture du chat
+watch(isChatOpen, (newVal) => {
+  if (newVal && messages.value.length === 0) {
     messages.value.push({
       id: Date.now(),
       textKey: 'chatbot.welcome_msg',
@@ -132,7 +133,7 @@ const openChat = () => {
       options: defaultOptions
     });
   }
-};
+});
 
 const handleOption = (option) => {
   messages.value.push({
