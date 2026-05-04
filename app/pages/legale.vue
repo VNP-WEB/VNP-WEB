@@ -206,7 +206,11 @@ useHead({
   justify-content: center; border-radius: 12px; font-size: 1.4rem; flex-shrink: 0;
 }
 
-.legal-section h2 { font-size: 1.5rem; color: #0f172a; margin: 0; }
+/* Modifié ici pour donner un espace en dessous de tous les titres h2 de base */
+.legal-section h2 { font-size: 1.5rem; color: #0f172a; margin: 0 0 20px 0; }
+
+/* Annule la marge pour les titres qui sont à l'intérieur d'un bloc avec icône pour ne pas casser l'alignement */
+.section-title h2 { margin-bottom: 0; }
 
 /* === FORCE LA CASSURE DES MOTS LONGS SUR MOBILE === */
 .section-content, .contact-details, .info-box {

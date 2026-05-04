@@ -2,7 +2,7 @@
   <div class="chatbot-container">
     
     <button 
-      v-if="!isOpen" 
+      v-if="!isChatOpen" 
       class="chat-bubble-button"
       @click="openChat"
     >
@@ -12,7 +12,7 @@
     </button>
 
     <div 
-      v-if="isOpen" 
+      v-if="isChatOpen" 
       class="chat-window"
     >
       <div class="chat-header">
@@ -27,7 +27,7 @@
             <span class="status">{{ t('chatbot.status') }}</span>
           </div>
         </div>
-        <button class="close-btn" @click="isOpen = false">✕</button>
+        <button class="close-btn" @click="isChatOpen = false">✕</button>
       </div>
 
       <div class="chat-body" ref="chatBodyRef">
@@ -61,7 +61,7 @@
               </div>
 
               <div v-if="msg.link" class="chat-link-wrapper">
-                <NuxtLink :to="msg.link.url" class="chat-link-btn" @click="isOpen = false">
+                <NuxtLink :to="msg.link.url" class="chat-link-btn" @click="isChatOpen = false">
                   {{ t(msg.link.textKey) }}
                 </NuxtLink>
               </div>
@@ -96,7 +96,8 @@ import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
 
-const isOpen = ref(false);
+// ICI : On utilise useState pour écouter le même état que la page d'accueil
+const isChatOpen = useState('isChatOpen', () => false);
 const newMessage = ref('');
 const chatBodyRef = ref(null);
 const messages = ref([]);
@@ -113,7 +114,6 @@ const scrollToBottom = async () => {
   }
 };
 
-// Les options de base que le bot propose
 const defaultOptions = [
   { textKey: 'chatbot.options.quote', action: 'quote' },
   { textKey: 'chatbot.options.services', action: 'services' },
@@ -121,7 +121,7 @@ const defaultOptions = [
 ];
 
 const openChat = () => {
-  isOpen.value = true;
+  isChatOpen.value = true;
   if (messages.value.length === 0) {
     messages.value.push({
       id: Date.now(),
@@ -134,9 +134,7 @@ const openChat = () => {
   }
 };
 
-// Quand l'utilisateur clique sur un bouton d'option
 const handleOption = (option) => {
-  // 1. Ajouter le choix de l'utilisateur dans le chat
   messages.value.push({
     id: Date.now(),
     textKey: option.textKey,
@@ -146,7 +144,6 @@ const handleOption = (option) => {
   });
   scrollToBottom();
 
-  // 2. Simuler la réflexion du bot
   setTimeout(() => {
     let responseKey = '';
     let responseLink = null;
@@ -169,13 +166,12 @@ const handleOption = (option) => {
       sender: 'bot',
       time: getCurrentTime(),
       link: responseLink,
-      options: defaultOptions // On repropose les choix pour continuer la boucle
+      options: defaultOptions
     });
     scrollToBottom();
   }, 800);
 };
 
-// Quand l'utilisateur tape un texte libre
 const handleUserText = () => {
   if (newMessage.value.trim() !== '') {
     messages.value.push({
@@ -189,7 +185,6 @@ const handleUserText = () => {
     newMessage.value = '';
     scrollToBottom();
 
-    // Réponse de secours pour le texte libre
     setTimeout(() => {
       messages.value.push({
         id: Date.now(),
@@ -206,7 +201,6 @@ const handleUserText = () => {
 </script>
 
 <style scoped>
-/* Base de ton CSS (conservée) */
 .chatbot-container { font-family: 'Dunbar Text', system-ui, -apple-system, sans-serif; position: fixed; bottom: 20px; right: 20px; z-index: 1000; display: flex; flex-direction: column; align-items: flex-end; }
 .chat-bubble-button { background: linear-gradient(135deg, #0047ff 0%, #00b4ff 100%); color: white; border: none; width: 60px; height: 60px; border-radius: 50%; box-shadow: 0 5px 20px rgba(0,0,0,0.2); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: transform 0.3s; }
 .chat-bubble-button:hover { transform: scale(1.05); }
@@ -235,45 +229,10 @@ const handleUserText = () => {
 .send-btn { background-color: #0f172a; color: white; border: none; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background-color 0.2s; flex-shrink: 0; }
 .send-btn:hover { background-color: #1e293b; }
 .plane-icon { width: 18px; height: 18px; fill: currentColor; margin-left: -2px; }
-
-/* NOUVEAUX STYLES POUR LES OPTIONS ET LIENS */
-.chat-options {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: 12px;
-}
-.chat-option-btn {
-  background-color: #f0f4ff;
-  color: #0047ff;
-  border: 1px solid #cce0ff;
-  padding: 8px 12px;
-  border-radius: 15px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  text-align: left;
-  transition: all 0.2s;
-}
-.chat-option-btn:hover {
-  background-color: #0047ff;
-  color: white;
-}
-.chat-link-wrapper {
-  margin-top: 12px;
-}
-.chat-link-btn {
-  display: inline-block;
-  background-color: #0047ff;
-  color: white;
-  text-decoration: none;
-  padding: 8px 15px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,71,255,0.3);
-  transition: background-color 0.2s;
-}
-.chat-link-btn:hover {
-  background-color: #0030cc;
-}
+.chat-options { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+.chat-option-btn { background-color: #f0f4ff; color: #0047ff; border: 1px solid #cce0ff; padding: 8px 12px; border-radius: 15px; font-size: 0.9rem; cursor: pointer; text-align: left; transition: all 0.2s; }
+.chat-option-btn:hover { background-color: #0047ff; color: white; }
+.chat-link-wrapper { margin-top: 12px; }
+.chat-link-btn { display: inline-block; background-color: #0047ff; color: white; text-decoration: none; padding: 8px 15px; border-radius: 20px; font-size: 0.9rem; font-weight: bold; box-shadow: 0 2px 5px rgba(0,71,255,0.3); transition: background-color 0.2s; }
+.chat-link-btn:hover { background-color: #0030cc; }
 </style>

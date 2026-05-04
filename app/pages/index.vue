@@ -87,7 +87,10 @@
           <div class="feature-icon blue-circle">💬</div>
           <h3>{{ $t('home.features.chat') }}</h3>
           <p>{{ $t('home.features.chat_desc') }}</p>
-          <span class="feature-link" style="cursor: default;">{{ $t('home.features.learn_more') }}</span>
+          <!-- LE BOUTON CORRIGÉ EST ICI -->
+          <button @click="isChatOpen = true" class="feature-link" style="cursor: pointer; background: transparent; font-family: inherit; font-size: inherit;">
+            {{ $t('home.features.learn_more') }}
+          </button>
         </div>
         <div class="feature-item">
           <div class="feature-icon blue-circle">🎯</div>
@@ -215,6 +218,9 @@
 
 <script setup>
 const localePath = useLocalePath()
+
+// Ajout de l'état global du chat pour pouvoir l'ouvrir via le bouton
+const isChatOpen = useState('isChatOpen', () => false)
 </script>
 
 <style scoped>
