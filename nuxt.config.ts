@@ -25,17 +25,13 @@ export default defineNuxtConfig({
     // On pointe bien vers ton dossier à la racine
     langDir: '../i18n/locales/', 
     locales: [
-      { code: 'fr', file: 'fr.json', name: '🇫🇷 FR' },
-      { code: 'en', file: 'en.json', name: '🇬🇧 EN' },
-      { code: 'nl', file: 'nl.json', name: '🇧🇪 NL' }
+      { code: 'fr', iso: 'fr-FR', file: 'fr.json', name: '🇫🇷 FR' },
+      { code: 'en', iso: 'en-US', file: 'en.json', name: '🇬🇧 EN' },
+      { code: 'nl', iso: 'nl-NL', file: 'nl.json', name: '🇧🇪 NL' }
     ],
-    // LE NOUVEAU BLOC MAGIQUE POUR LA SAUVEGARDE DE LA LANGUE
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'vnp_lang', // Nuxt va utiliser ce cookie pour se souvenir du choix
-      redirectOn: 'root',    // Redirige automatiquement sur la bonne langue depuis l'accueil
-      alwaysRedirect: true   // Force la redirection à chaque visite si le cookie existe
-    }
+    // LE NOUVEAU BLOC MAGIQUE POUR LA SAUVEGARDE DE LA LANGUE ET L'ACCESSIBILITÉ
+    // Désactivé pour forcer l'attribut lang="" correct sur la balise <html>
+    detectBrowserLanguage: false
   },
 
   // Configuration pour l'envoi de mails (Nodemailer et Brevo)

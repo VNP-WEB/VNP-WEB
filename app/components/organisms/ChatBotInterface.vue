@@ -1,11 +1,12 @@
 <template>
   <div class="chatbot-container">
     
-    <!-- Bouton bulle classique -->
+    <!-- Bouton bulle classique avec l'attribut aria-label ajouté -->
     <button 
       v-if="!isChatOpen" 
       class="chat-bubble-button"
       @click="isChatOpen = true"
+      aria-label="Ouvrir le chat assistant"
     >
       <svg class="message-icon" viewBox="0 0 24 24" fill="currentColor">
         <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
@@ -121,7 +122,6 @@ const defaultOptions = [
   { textKey: 'chatbot.options.other', action: 'other' }
 ];
 
-// LA CORRECTION EST ICI : On surveille l'ouverture du chat
 watch(isChatOpen, (newVal) => {
   if (newVal && messages.value.length === 0) {
     messages.value.push({

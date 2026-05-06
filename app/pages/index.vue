@@ -87,8 +87,7 @@
           <div class="feature-icon blue-circle">💬</div>
           <h3>{{ $t('home.features.chat') }}</h3>
           <p>{{ $t('home.features.chat_desc') }}</p>
-          <!-- LE BOUTON CORRIGÉ EST ICI -->
-          <button @click="isChatOpen = true" class="feature-link" style="cursor: pointer; background: transparent; font-family: inherit; font-size: inherit;">
+          <button @click="isChatOpen = true" class="feature-link" style="cursor: pointer; background: transparent; border: none; font-family: inherit; font-size: inherit; padding: 0;">
             {{ $t('home.features.learn_more') }}
           </button>
         </div>
@@ -221,6 +220,17 @@ const localePath = useLocalePath()
 
 // Ajout de l'état global du chat pour pouvoir l'ouvrir via le bouton
 const isChatOpen = useState('isChatOpen', () => false)
+
+// Optimisation SEO
+useHead({
+  title: 'VNP-WEB | Création de site web, Rédaction & SEO',
+  meta: [
+    { 
+      name: 'description', 
+      content: 'VNP-WEB crée des sites web performants (WordPress & sur-mesure) et optimise votre référencement naturel (SEO/GEO) pour faire décoller votre activité.' 
+    }
+  ]
+})
 </script>
 
 <style scoped>
