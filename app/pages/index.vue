@@ -17,7 +17,8 @@
         </div>
         <div class="hero-image-wrapper">
           <div class="image-placeholder">
-            <img src="~/assets/images/accueil.jpeg" alt="VNP-WEB" />
+            <!-- CORRECTION LIGHTHOUSE : fetchpriority="high", dimensions, format (idéalement webp) -->
+            <img src="~/assets/images/accueil.jpeg" alt="VNP-WEB" width="744" height="496" fetchpriority="high" />
           </div>
         </div>
       </div>
