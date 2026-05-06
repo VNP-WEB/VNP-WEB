@@ -1,7 +1,7 @@
 <template>
   <div class="chatbot-container">
     
-    <!-- Bouton bulle classique avec la correction d'accessibilité -->
+    <!-- Bouton bulle classique avec l'attribut aria-label ajouté -->
     <button 
       v-if="!isChatOpen" 
       class="chat-bubble-button"

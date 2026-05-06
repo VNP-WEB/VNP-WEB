@@ -17,8 +17,7 @@
         </div>
         <div class="hero-image-wrapper">
           <div class="image-placeholder">
-            <!-- CORRECTION LIGHTHOUSE : Format WebP et attributs width/height ajoutés -->
-            <img src="~/assets/images/accueil.webp" alt="VNP-WEB" width="1200" height="800" />
+            <img src="~/assets/images/accueil.jpeg" alt="VNP-WEB" />
           </div>
         </div>
       </div>
@@ -569,4 +568,4 @@ useHead({
     font-size: 2rem;
   }
 }
-</style> /* */
+</style>
