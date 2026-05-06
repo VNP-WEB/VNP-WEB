@@ -17,7 +17,8 @@
         </div>
         <div class="hero-image-wrapper">
           <div class="image-placeholder">
-            <img src="~/assets/images/accueil.jpeg" alt="VNP-WEB" />
+            <!-- CORRECTION LIGHTHOUSE : Format WebP et attributs width/height ajoutés -->
+            <img src="~/assets/images/accueil.webp" alt="VNP-WEB" width="1200" height="800" />
           </div>
         </div>
       </div>
