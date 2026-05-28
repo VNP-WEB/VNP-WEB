@@ -569,4 +569,4 @@ useHead({
     font-size: 2rem;
   }
 }
-</style>
+</style> 
