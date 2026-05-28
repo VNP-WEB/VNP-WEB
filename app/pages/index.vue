@@ -27,7 +27,7 @@
     <section class="stats-section">
       <div class="stats-container">
         <div class="stat-item">
-          <h2 class="stat-number">+150</h2>
+          <h2 class="stat-number">+250</h2>
           <p class="stat-label">{{ $t('home.stats.projects') }}</p>
         </div>
         <div class="stat-item">
