@@ -77,10 +77,10 @@
       </div>
 
       <div class="chat-input">
-        <input 
-          type="text" 
-          v-model="newMessage" 
-          :placeholder="t('chatbot.placeholder')" 
+        <input
+          type="text"
+          v-model="newMessage"
+          :placeholder="t('chatbot.placeholder')"
           @keyup.enter="handleUserText"
         />
         <button class="send-btn" @click="handleUserText">
@@ -182,7 +182,7 @@ const handleUserText = () => {
       sender: 'user',
       time: getCurrentTime()
     });
-    
+
     newMessage.value = '';
     scrollToBottom();
 

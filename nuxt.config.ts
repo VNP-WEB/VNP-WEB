@@ -54,10 +54,11 @@ export default defineNuxtConfig({
     gmailUser: process.env.GMAIL_USER,
     gmailAppPassword: process.env.GMAIL_APP_PASSWORD,
     contactReceiver: process.env.CONTACT_RECEIVER,
-    
+
     // NOUVELLES VARIABLES BREVO
     brevoApiKey: process.env.BREVO_API_KEY,
-    brevoListId: process.env.BREVO_LIST_ID
+    brevoListId: process.env.BREVO_LIST_ID,
+
   },
 
   sitemap: {
