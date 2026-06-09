@@ -1,6 +1,23 @@
 import Parser from 'rss-parser'
 import { translate } from 'google-translate-api-x'
 
+const FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80'
+
+async function fetchOgImage(url: string): Promise<string | null> {
+  try {
+    const res = await fetch(url, {
+      headers: { 'User-Agent': 'Mozilla/5.0' },
+      signal: AbortSignal.timeout(4000)
+    })
+    const html = await res.text()
+    const match = html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/)
+      || html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/)
+    return match?.[1] || null
+  } catch {
+    return null
+  }
+}
+
 export default defineEventHandler(async (event) => {
   // 1. On récupère la langue cible demandée dans l'URL (par défaut 'fr')
   const query = getQuery(event)
@@ -25,13 +42,17 @@ export default defineEventHandler(async (event) => {
     try {
       const parsed = await parser.parseURL(feed.url)
       
-      const items = parsed.items.slice(0, 3).map(item => {
-        let img = 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80'
+      const items = await Promise.all(parsed.items.slice(0, 3).map(async item => {
+        let img: string | null = null
         if (item['media:content']) {
-           img = item['media:content'].$?.url || img
+          img = item['media:content'].$?.url || null
         } else if (item['content:encoded']) {
-           const match = item['content:encoded'].match(/<img[^>]+src="([^">]+)"/)
-           if (match) img = match[1]
+          const match = item['content:encoded'].match(/<img[^>]+src="([^">]+)"/)
+          if (match) img = match[1]
+        }
+
+        if (!img && item.link) {
+          img = await fetchOgImage(item.link)
         }
 
         return {
@@ -40,16 +61,15 @@ export default defineEventHandler(async (event) => {
           excerpt: (item.contentSnippet || '').substring(0, 140) + '...',
           link: item.link,
           author: item.creator || 'Rédaction',
-          // Formatage de la date selon la langue
           date: new Date(item.pubDate || '').toLocaleDateString(
-            targetLang === 'nl' ? 'nl-NL' : targetLang === 'en' ? 'en-US' : 'fr-FR', 
+            targetLang === 'nl' ? 'nl-NL' : targetLang === 'en' ? 'en-US' : 'fr-FR',
             { day: 'numeric', month: 'long', year: 'numeric' }
           ),
           rawDate: new Date(item.pubDate || ''),
           category: feed.category,
-          image: img
+          image: img || FALLBACK_IMAGE
         }
-      })
+      }))
       allArticles.push(...items)
     } catch (e) {
       console.error('Erreur RSS pour', feed.url)
