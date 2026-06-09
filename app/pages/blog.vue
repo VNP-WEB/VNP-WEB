@@ -159,9 +159,9 @@ import { computed, ref } from 'vue'
 const { t, locale } = useI18n()
 
 const toastVisible = ref(false)
-let toastTimer: ReturnType<typeof setTimeout> | null = null
+let toastTimer = null
 
-function copyLink(url: string) {
+function copyLink(url) {
   navigator.clipboard.writeText(url)
   if (toastTimer) clearTimeout(toastTimer)
   toastVisible.value = true
