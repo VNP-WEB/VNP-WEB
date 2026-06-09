@@ -2,7 +2,7 @@
   "nav": {
     "home": "Home",
     "services": "Services",
-    "portfolio": "Portfolio",
+    "portfolio": "Our Work",
     "blog": "News",
     "planning": "Planning",
     "about": "About",
@@ -373,7 +373,7 @@
     "updated": "Last updated"
   },
   "portfolio": {
-    "title": "Portfolio & Case Studies",
+    "title": "Our Work",
     "subtitle": "A glimpse of what happens when projects come to life.",
     "categories": {
       "wp": "WordPress Creation",

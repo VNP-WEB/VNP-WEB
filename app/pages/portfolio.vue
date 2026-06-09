@@ -131,13 +131,13 @@
 
 <script setup>
 const localePath = useLocalePath()
-const portfolioDescription = 'Découvrez les études de cas et réalisations de VNP-WEB en création de sites WordPress, SEO et rédaction web.'
+const portfolioDescription = 'Découvrez les réalisations de VNP-WEB en création de sites WordPress, SEO et rédaction web.'
 
 useHead({
-  title: 'Portfolio - VNP-WEB',
+  title: 'Réalisations - VNP-WEB',
   meta: [
     { name: 'description', content: portfolioDescription },
-    { property: 'og:title', content: 'Portfolio - VNP-WEB' },
+    { property: 'og:title', content: 'Réalisations - VNP-WEB' },
     { property: 'og:description', content: portfolioDescription },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: 'https://vnp-web.com/portfolio' },

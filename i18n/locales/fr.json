@@ -2,7 +2,7 @@
   "nav": {
     "home": "Accueil",
     "services": "Services",
-    "portfolio": "Portfolio",
+    "portfolio": "Réalisations",
     "blog": "Actualités",
     "planning": "Planning",
     "about": "À propos",
@@ -373,7 +373,7 @@
     "updated": "Dernière mise à jour"
   },
   "portfolio": {
-    "title": "Portfolio & Études de cas",
+    "title": "Réalisations",
     "subtitle": "Un aperçu de ce qui se passe quand les projets prennent vie.",
     "categories": {
       "wp": "Création WordPress",

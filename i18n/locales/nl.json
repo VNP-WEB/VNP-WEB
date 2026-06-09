@@ -2,7 +2,7 @@
   "nav": {
     "home": "Startpagina",
     "services": "Diensten",
-    "portfolio": "Portfolio",
+    "portfolio": "Realisaties",
     "blog": "Nieuws",
     "planning": "Planning",
     "about": "Over ons",
@@ -373,7 +373,7 @@
     "updated": "Laatst bijgewerkt"
   },
   "portfolio": {
-    "title": "Portfolio & Casestudy's",
+    "title": "Realisaties",
     "subtitle": "Een blik op wat er gebeurt als projecten tot leven komen.",
     "categories": {
       "wp": "WordPress Creatie",
