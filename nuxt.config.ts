@@ -1,8 +1,13 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
-  
+
+  site: {
+    url: 'https://vnp-web.com',
+    name: 'VNP Web',
+  },
+
   // LA LIGNE MAGIQUE : Empêche le serveur de crasher et délègue l'affichage au navigateur
-  ssr: false, 
+  ssr: false,
 
   css: ['~/assets/css/main.css'],
 
@@ -44,6 +49,18 @@ export default defineNuxtConfig({
     // NOUVELLES VARIABLES BREVO
     brevoApiKey: process.env.BREVO_API_KEY,
     brevoListId: process.env.BREVO_LIST_ID
+  },
+
+  sitemap: {
+    autoLastmod: true,
+    urls: [
+      { loc: '/', changefreq: 'monthly', priority: 1.0 },
+      { loc: '/services', changefreq: 'monthly', priority: 0.9 },
+      { loc: '/portfolio', changefreq: 'monthly', priority: 0.8 },
+      { loc: '/about', changefreq: 'yearly', priority: 0.7 },
+      { loc: '/blog', changefreq: 'weekly', priority: 0.8 },
+      { loc: '/contact', changefreq: 'yearly', priority: 0.6 },
+    ],
   },
 
   vite: {
