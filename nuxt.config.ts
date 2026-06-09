@@ -6,6 +6,15 @@ export default defineNuxtConfig({
     name: 'VNP Web',
   },
 
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/jpeg', href: '/logo.jpg' },
+        { rel: 'apple-touch-icon', href: '/logo.jpg' },
+      ]
+    }
+  },
+
   // LA LIGNE MAGIQUE : Empêche le serveur de crasher et délègue l'affichage au navigateur
   ssr: false,
 
