@@ -15,9 +15,6 @@ export default defineNuxtConfig({
     }
   },
 
-  // LA LIGNE MAGIQUE : Empêche le serveur de crasher et délègue l'affichage au navigateur
-  ssr: false,
-
   css: ['~/assets/css/main.css'],
 
   // 1. AJOUT DU MODULE SUPABASE ICI :

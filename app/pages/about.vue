@@ -106,11 +106,17 @@ import { useI18n } from 'vue-i18n'
 const localePath = useLocalePath()
 const { t } = useI18n()
 
-// SEO dynamique : on utilise les traductions et on a retiré le mot "freelance" !
 useHead({
   title: `${t('about.title')} - VNP-WEB`,
   meta: [
-    { name: 'description', content: t('about.subtitle') }
+    { name: 'description', content: t('about.subtitle') },
+    { property: 'og:title', content: `${t('about.title')} - VNP-WEB` },
+    { property: 'og:description', content: t('about.subtitle') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://vnp-web.com/about' },
+    { property: 'og:image', content: 'https://vnp-web.com/logo.jpg' },
+    { property: 'og:site_name', content: 'VNP Web' },
+    { name: 'twitter:card', content: 'summary' },
   ]
 })
 </script>

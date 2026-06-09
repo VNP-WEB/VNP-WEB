@@ -151,8 +151,20 @@ const servicesList = [
 const additionalServicesList = ['s1', 's2', 's3', 's4']
 const processList = ['p1', 'p2', 'p3', 'p4', 'p5']
 
+const servicesDescription = 'Des solutions web complètes pour répondre à tous vos besoins digitaux : création WordPress, SEO, rédaction et traduction.'
+
 useHead({
-  title: 'Nos Services - VNP-WEB'
+  title: 'Nos Services - VNP-WEB',
+  meta: [
+    { name: 'description', content: servicesDescription },
+    { property: 'og:title', content: 'Nos Services - VNP-WEB' },
+    { property: 'og:description', content: servicesDescription },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://vnp-web.com/services' },
+    { property: 'og:image', content: 'https://vnp-web.com/logo.jpg' },
+    { property: 'og:site_name', content: 'VNP Web' },
+    { name: 'twitter:card', content: 'summary' },
+  ]
 })
 </script>
 

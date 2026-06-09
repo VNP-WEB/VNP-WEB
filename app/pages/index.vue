@@ -222,13 +222,38 @@ const localePath = useLocalePath()
 // Ajout de l'état global du chat pour pouvoir l'ouvrir via le bouton
 const isChatOpen = useState('isChatOpen', () => false)
 
-// Optimisation SEO
+const homeDescription = 'VNP-WEB crée des sites web performants (WordPress & sur-mesure) et optimise votre référencement naturel (SEO/GEO) pour faire décoller votre activité.'
+
 useHead({
   title: 'VNP-WEB | Création de site web, Rédaction & SEO',
   meta: [
-    { 
-      name: 'description', 
-      content: 'VNP-WEB crée des sites web performants (WordPress & sur-mesure) et optimise votre référencement naturel (SEO/GEO) pour faire décoller votre activité.' 
+    { name: 'description', content: homeDescription },
+    { property: 'og:title', content: 'VNP-WEB | Création de site web, Rédaction & SEO' },
+    { property: 'og:description', content: homeDescription },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://vnp-web.com/' },
+    { property: 'og:image', content: 'https://vnp-web.com/logo.jpg' },
+    { property: 'og:site_name', content: 'VNP Web' },
+    { name: 'twitter:card', content: 'summary' },
+    { name: 'twitter:title', content: 'VNP-WEB | Création de site web, Rédaction & SEO' },
+    { name: 'twitter:description', content: homeDescription },
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'VNP Web',
+        url: 'https://vnp-web.com',
+        logo: 'https://vnp-web.com/logo.jpg',
+        description: 'Agence web spécialisée en création de sites WordPress, SEO et rédaction web.',
+        contactPoint: {
+          '@type': 'ContactPoint',
+          contactType: 'customer service',
+          availableLanguage: ['French', 'English', 'Dutch']
+        }
+      })
     }
   ]
 })

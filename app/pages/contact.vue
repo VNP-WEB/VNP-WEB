@@ -204,10 +204,19 @@ const handleSubmit = async () => {
   }
 }
 
+const contactDescription = 'Contactez VNP-WEB pour vos projets web, SEO, rédaction et traduction. Notre équipe est à votre écoute.'
+
 useHead({
   title: 'Contact - VNP-WEB',
   meta: [
-    { name: 'description', content: 'Contactez VNP-WEB pour vos projets web, SEO, rédaction et traduction. Notre équipe est à votre écoute.' }
+    { name: 'description', content: contactDescription },
+    { property: 'og:title', content: 'Contact - VNP-WEB' },
+    { property: 'og:description', content: contactDescription },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://vnp-web.com/contact' },
+    { property: 'og:image', content: 'https://vnp-web.com/logo.jpg' },
+    { property: 'og:site_name', content: 'VNP Web' },
+    { name: 'twitter:card', content: 'summary' },
   ]
 })
 </script>

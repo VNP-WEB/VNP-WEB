@@ -128,7 +128,21 @@ const { data: articles, pending } = await useLazyFetch(() => `/api/fetch-news?la
 const featuredPost = computed(() => articles.value?.length > 0 ? articles.value[0] : null)
 const otherPosts = computed(() => articles.value?.length > 1 ? articles.value.slice(1) : [])
 
-useHead({ title: `${t('blog_page.hero.title')} - VNP-WEB` })
+const blogDescription = 'Conseils, stratégies et actualités sur la création de sites web, le SEO et la rédaction de contenu par l\'équipe VNP-WEB.'
+
+useHead({
+  title: `${t('blog_page.hero.title')} - VNP-WEB`,
+  meta: [
+    { name: 'description', content: blogDescription },
+    { property: 'og:title', content: `${t('blog_page.hero.title')} - VNP-WEB` },
+    { property: 'og:description', content: blogDescription },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://vnp-web.com/blog' },
+    { property: 'og:image', content: 'https://vnp-web.com/logo.jpg' },
+    { property: 'og:site_name', content: 'VNP Web' },
+    { name: 'twitter:card', content: 'summary' },
+  ]
+})
 </script>
 
 <style scoped>
