@@ -136,9 +136,6 @@
           </div>
         </section>
 
-        <div class="updated-date">
-          <p>{{ $t('legal.updated') }} : {{ currentDateDisplay }}</p>
-        </div>
 
       </div>
     </div>
@@ -146,18 +143,10 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { locale } = useI18n()
 
-// Date de mise à jour (Formatée selon la langue de l'utilisateur)
-const currentDateDisplay = computed(() => {
-  const currentLocaleStr = locale.value === 'en' ? 'en-US' : (locale.value === 'nl' ? 'nl-NL' : 'fr-FR')
-  // Change cette date si tu mets à jour tes mentions légales un jour
-  const lastUpdate = new Date('2024-03-26')
-  return lastUpdate.toLocaleDateString(currentLocaleStr, { year: 'numeric', month: 'long', day: 'numeric' })
-})
 
 // Meta tags SEO
 useHead({
@@ -247,8 +236,5 @@ li { margin-bottom: 8px; line-height: 1.5; }
 }
 
 .contact-details { margin-top: 15px; display: flex; flex-direction: column; gap: 10px; }
-.updated-date {
-  text-align: center; color: #94a3b8; border-top: 1px solid #e2e8f0;
-  padding-top: 20px; margin-top: 40px; font-size: 0.9rem;
-}
+
 </style>
